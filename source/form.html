@@ -8,7 +8,7 @@
 
     <header class="main-header">
 
-      <a class="header__logo logo" href="index.html" aria-current="page">
+      <a class="header__logo logo" href="index.html">
         <img class="main-header__logo-image" src="img/icon-super-cat.svg" width="33" height="38" alt="Супер-кот в маске на желтом фоне">
         <img class="logo-title" src="img/logo-catenergy.svg" width="101" height="18" alt="Логотип catenergy">
       </a>
@@ -20,16 +20,146 @@
         </button>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current"><a href="index.html" aria-current="page">Главная</a></li>
+          <li class="main-nav__item "><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="#">Каталог продукции</a></li>
-          <li class="main-nav__item"><a href="#">Подбор программ</a></li>
+          <li class="main-nav__item main-nav__item--current"><a href="form.html" aria-current="page">Подбор программ</a></li>
         </ul>
 
       </nav>
 
     </header>
 
-    <main class="main-container"></main>
+    <main class="main-container">
+
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
+        <div class="form__text-container">
+          <h2 class="form__title">Подбор программы</h2>
+          <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
+
+        <fieldset class="form__module">
+
+          <h3 class="visually-hidden">Информация о питомце</h3>
+
+          <ul class="form__module-list">
+
+            <li class="form__module-item">
+              <label class="form__text-label" for="name">Имя:*</label>
+              <input class="form__text-input" type="text" name="name" id="name" placeholder="Барсик">
+            </li>
+
+            <li class="form__module-item">
+              <label class="form__text-label" for="weigth">Вес(кг):*</label>
+              <input class="form__text-input" type="text" name="name" id="weigth" placeholder="7">
+            </li>
+
+            <li class="form__module-item">
+              <label class="form__text-label" for="age">Возраст(лет):*</label>
+              <input class="form__text-input" type="text" name="name" id="age" placeholder="7">
+            </li>
+
+          </ul>
+
+        </fieldset>
+
+        <fieldset class="form__module">
+
+          <h3 class="visually-hidden">Какая диета интересует</h3>
+
+          <ul class="form__module-list">
+
+            <li class="form__module-item">
+              <input class="form__radio-input" type="radio" name="diet" id="lose-weight" value="lose-weight" checked>
+              <label class="form__radio-label" for="lose-weight">Похудение</label>
+            </li>
+
+            <li class="form__module-item">
+              <input class="form__radio-input" type="radio" name="diet" id="weight-gain" value="weight-gain">
+              <label class="form__radio-label" for="weight-gain">Набор массы</label>
+            </li>
+
+            <li class="form__module-item">
+              <input class="form__radio-input" type="radio" name="diet" id="advice" value="advice">
+              <label class="form__radio-label" for="advice">Не знаю (нужен ваш совет)</label>
+            </li>
+
+          </ul>
+
+        </fieldset>
+
+        <fieldset class="form__module">
+
+          <legend class="form__module-legend">Контактрые данные(владельца кота)</legend>
+
+          <ul class="form__module-list">
+
+            <li class="form__module-item">
+              <label class="form__field-label" for="e-mail">E-mail:*</label>
+              <input class="form__field-input" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
+              <svg class="form__field-icon" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.500336 5.5V13.5H17.5041V5.5M0.500336 0.5H17.5041V2.5L9.00223 8.5L0.500336 2.5V0.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </li>
+
+            <li class="form__module-item">
+              <label class="form__field-label" for="telephone">Телефон:*</label>
+              <input class="form__field-input" type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90" required>
+              <svg class="form__field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.00224 8H15.5041M15.5041 8L13.0036 5.5M15.5041 8L13.0036 10.5M5.50191 0.5V5.5H2.50124V10.5H5.50191V15.5H3.00135C1.50102 15.5 0.500793 14.5 0.500793 13V3C0.500793 1.5 1.50102 0.5 3.00135 0.5H5.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </li>
+
+          </ul>
+
+        </fieldset>
+
+        <fieldset class="form__module">
+
+          <legend class="form__module-legend">Комментарий</legend>
+
+          <label class="form__comment-label" for="comment" aria-label="Комментарий"></label>
+          <textarea class="form__comment-input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+        </fieldset>
+
+        <fieldset class="form__module">
+
+          <legend class="form__module-legend">Дополнительно:</legend>
+
+          <ul class="form__module-list">
+
+            <li class="form__module-item">
+              <input class="form__checkbox-input" type="checkbox" checked id="sweetener" name="sweetener">
+              <label class="form__checkbox-label" for="sweetener">сахарозаменитель</label>
+            </li>
+
+            <li class="form__module-item">
+              <input class="form__checkbox-input" type="checkbox" id="water" name="water">
+              <label class="form__checkbox-label" for="water">питьевая вода</label>
+            </li>
+
+            <li class="form__module-item">
+              <input class="form__checkbox-input" type="checkbox" id="milk" name="milk">
+              <label class="form__checkbox-label" for="milk">молоко</label>
+            </li>
+
+            <li class="form__module-item">
+              <input class="form__checkbox-input" type="checkbox" id="vitamins" name="vitamins">
+              <label class="form__checkbox-label" for="vitamins">витамины</label>
+            </li>
+
+          </ul>
+
+        </fieldset>
+
+        <button class="form__button button" type="submit">Отправить заявку</button>
+
+        <p class="form-submit__note"><sup>*</sup> — Обязательные поля</p>
+
+      </form>
+
+    </main>
 
     <footer class="main-footer">
 
@@ -93,11 +223,11 @@
 
       <div class="dev-container">
 
-        <a class="footer__dev-link">
+        <a class="footer__dev-link" href="">
           <p class="footer__dev-name">HTML Acadevy</p>
         </a>
 
-        <a class="footer__dev-link">
+        <a class="footer__dev-link" href="">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
             </svg>
