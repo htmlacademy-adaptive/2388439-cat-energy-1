@@ -19,7 +19,7 @@
         <span class="visually-hidden">Закрыть меню</span> <!-- Добавил состояние которое будет при открытом меню -->
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="index.html" aria-current="page">Главная</a></li>
+        <li class="main-nav__item"><a href="index.html" aria-current="page">Главная</a></li> <!-- Убрал модификатор. Стилизовать полоску буду по атрибуту -->
         <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
         <li class="main-nav__item"><a href="form.html">Подбор программ</a></li>
       </ul>
@@ -27,28 +27,31 @@
   </header>
 
   <main class="main">
-    <h1 class="main__title">Функциональное питание для котов</h1>
+
     <section class="promo">
-      <h2 class="promo__slogan">Занялся собой? Займись котом!</h2>
-      <img class="promo__content-image" src="img/index-can-energy-chicken.png" width="280" height="270" alt="Промо изображение. Порция питания для котов cat energy pro. С курицей. 500 грамм.">
+      <h1 class="promo__title">Функциональное питание для котов</h1> <!-- Перенёс h1 в section h2 сделал параграфом, переименовал h1 в promo__title-->
+      <p class="promo__slogan">Занялся собой? Займись котом!</p>
+      <img class="promo__content-image" src="img/index-can-energy-chicken.png" width="280" height="270" alt="Промо изображение. Порция питания для котов Cat Energy Pro. С курицей. 500 грамм.">
       <a class="promo__button button" href="form.html">Подобрать программу</a>
     </section>
-    <section class="program">
+
+    <section class="program"> <!-- То что нужно было написал с большой буквы -->
       <ul class="program__list">
         <li class="program__item">
           <h2 class="program__item-title">Похудение</h2>
           <p class="program__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="program__item-link" href="#">каталог slim</a>
+          <a class="program__item-link" href="#">Каталог Slim</a>
         </li>
         <li class="program__item">
           <h2 class="program__item-title">Набор массы</h2>
           <p class="program__item-text">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="program__item-link" href="#">каталог pro</a>
+          <a class="program__item-link" href="#">Каталог Pro</a>
         </li>
       </ul>
     </section>
+
     <section class="advantages">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
@@ -66,28 +69,31 @@
         </li>
       </ul>
     </section>
+
     <section class="sample">
       <h2 class="sample__title">Живой пример</h2>
-      <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+      <p class="sample__text">Борис сбросил 5&#160;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок!
-        При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <dl class="sample__list">
         <div class="sample__item">
-          <dt class="sample__number">5 кг</dt>
-          <dd class="sample__description">снижение веса</dd>
+          <dt class="sample__number">5&#160;кг</dt>
+          <dd class="sample__description">Снижение веса</dd> <!-- В этом и следующем списках не стал ни чего менять. Не понял почему ты считаешь что 5 кг это dd,
+          а снижение веса dt. Я так мыслю: термин 5кг. Что 5 кг? Снижение веса(определение). И на макете снижение веса ниже чем 5 кг. Получается, что нужно
+          будет в css менять их местами. А это лишний код. Мне кажется что лучше так оставить. Как ты считаешь? Со следующим dl та же история. -->
         </div>
       </dl>
       <dl class="sample__list">
         <div class="sample__item">
           <dt class="sample__number">60 дней</dt>
-          <dd class="sample__description">затрачено времени</dd>
+          <dd class="sample__description">Затрачено времени</dd>
         </div>
       </dl>
-      <p class="sample__price-text">Затраты на питание: 15 000 &#8381;</p>
+      <p class="sample__price-text">Затраты на питание: 15&#160;000&#160;₽</p>
       <div class="slider">
-        <div class="slider__images">
-          <img class="slider__before" src="img/sweet-pie.png" width="592" height="512" alt="Жирный, красивый, пушистый котик. Ну просто сладкий пирожочек. Его жизнь явно удалась.">
-          <img class="slider__after" src="img/skinny-cat.png" width="592" height="512" alt="Тощий кот доходяга.">
+        <div class="slider__images"> <!-- Изменил названия изображений и альты как пологается, без шуток. -->
+          <img class="slider__before" src="img/well-fed-cat.png" width="592" height="512" alt="Фотография кота Бориса до замены обычного корма на корм Cat Energy.">
+          <img class="slider__after" src="img/cat-lost-weight.png" width="592" height="512" alt="Фотография кота Бориса сбросившего 5 килограмм через 2 месяца на диете Cat Energy">
         </div>
         <div class="slider__compare">
           <button class="slider__images-compare">до после</button>
@@ -95,16 +101,16 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="footer__addres-container">
-      <p class="footer__invite-text">приглашаем к сотрудничеству дилеров!</p>
+      <p class="footer__invite-text">Приглашаем к сотрудничеству дилеров!</p> <!-- Написал с большой буквы. -->
       <p class="footer__addres-text">ул. Большая конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <div class="map" style="position:relative;overflow:hidden;">
+    <div class="map">
       <h2 class="visually-hidden">Адрес на Яндекс картах</h2>
-      <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
-      <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323037%2C59.938631&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 на карте Санкт‑Петербурга, ближайшее метро Гостиный двор — Яндекс Карты</a>
-      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323037%2C59.938631&mode=whatshere&whatshere%5Bpoint%5D=30.323037%2C59.938631&whatshere%5Bzoom%5D=17&z=16" width="560" height="400" style="position:relative;"></iframe>
+      <img class="alt-map" src="img/alt-location.png" alt="Схема проезда"> <!-- Добавил альтернативное изображение карты -->
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323037%2C59.938631&mode=whatshere&whatshere%5Bpoint%5D=30.323037%2C59.938631&whatshere%5Bzoom%5D=17&z=16" width="560" height="400"></iframe>
     </div>
     <div class="footer__link-container">
       <a class="footer__logo" href="index.html" aria-current="page">
@@ -139,7 +145,7 @@
     </div>
     <div class="dev-container">
       <a class="footer__dev-link" href="#">
-        <p class="footer__dev-name">HTML Acadevy</p>
+        <p class="footer__dev-name">HTML Academy</p> <!-- Исправил ошибку в слове -->
       </a>
       <a class="footer__dev-link" href="#">
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
