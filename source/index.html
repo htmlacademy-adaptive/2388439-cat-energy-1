@@ -14,13 +14,13 @@
       <img class="logo__image logo__image--icon" src="img/icon-images.svg" width="33" height="38" alt="Супер-кот в маске на желтом фоне">
       <img class="logo__image logo__image-title" src="img/logo-title.svg" width="101" height="18" alt="Логотип Cat Energy">
     </a>
-    <nav class="main-nav main-nav--is-close"> <!-- Убрал модификаторы и добавил элемент. main-nav__is-close базовое состояние -->
-      <button class="btn-burger"> <!-- Изменил класс -->
+    <nav class="main-nav main-nav--is-close">
+      <button class="btn-burger">
         <span class="visually-hidden">Открыть меню</span>
-        <span class="visually-hidden">Закрыть меню</span> <!-- Добавил состояние которое будет при открытом меню -->
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="index.html" aria-current="page">Главная</a></li> <!-- Убрал модификатор. Стилизовать полоску буду по атрибуту -->
+        <li class="main-nav__item"><a href="index.html" aria-current="page">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
         <li class="main-nav__item"><a href="form.html">Подбор программ</a></li>
       </ul>
@@ -30,7 +30,7 @@
   <main class="main">
 
     <section class="promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1> <!-- Перенёс h1 в section, h2 сделал параграфом, переименовал h1 в promo__title-->
+      <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
       <img class="promo__content-image" src="img/index-can-energy-chicken.png" width="280" height="270" alt="Промо изображение. Порция питания для котов Cat Energy Pro. С курицей. 500 грамм.">
       <a class="promo__button button" href="form.html">Подобрать программу</a>
@@ -39,13 +39,13 @@
     <section class="program"> <!-- То что нужно было написал с большой буквы -->
       <h2 class="visually-hidden">Выбор программы питания</h2> <!-- Добавил скрытый заголовок -->
       <ul class="program__list">
-        <li class="program__item">
+        <li class="program__item program__item--slim">
           <h2 class="program__title">Похудение</h2> <!-- Открутил все элементы от слова item-->
           <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог Slim</a>
         </li>
-        <li class="program__item">
+        <li class="program__item program__item--pro">
           <h2 class="program__title">Набор массы</h2>
           <p class="program__text">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
