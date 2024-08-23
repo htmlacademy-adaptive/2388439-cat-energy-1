@@ -1,0 +1,23 @@
+@import "./vareables.scss";
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin background-green {
+  background-color: $base-green;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+  color: $base-black;
+}
+
+@mixin text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}

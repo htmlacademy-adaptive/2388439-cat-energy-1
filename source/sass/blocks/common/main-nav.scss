@@ -1,0 +1,10 @@
+.main-nav__list {
+  @include list-reset;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 74px;
+}
+
+.main-nav__link {
+  @include link-reset;
+}

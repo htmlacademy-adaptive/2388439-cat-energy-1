@@ -1,0 +1,25 @@
+.program__list {
+  @include list-reset;
+}
+
+.program__item {
+  background-color: $basic-grey;
+}
+
+.program__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.program__text {
+  @include text;
+}
+
+.program__link {
+  text-decoration: none;
+  color: $base-black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}

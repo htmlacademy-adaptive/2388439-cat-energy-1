@@ -1,0 +1,11 @@
+.sample {
+  background-color: $sample-gray;
+}
+
+.sample__text {
+  @include text;
+}
+
+.sample__description {
+  @include text;
+}

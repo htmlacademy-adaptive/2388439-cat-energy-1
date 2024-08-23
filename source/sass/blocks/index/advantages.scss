@@ -1,0 +1,10 @@
+.advantages__list {
+  @include list-reset;
+  @include text;
+}
+
+.advantages__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}

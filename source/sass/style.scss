@@ -1,25 +1,28 @@
-// БЭМ блоки
-@import "advantages.scss";
-@import "btn-burger.scss";
-@import "button.scss";
-@import "catalog.scss";
-@import "dev.scss";
-@import "footer.scss";
-@import "form.scss";
-@import "logo.scss";
-@import "main-nav.scss";
-@import "main.scss";
-@import "map.scss";
-@import "page-header.scss";
-@import "page.scss";
-@import "product.scss";
-@import "program.scss";
-@import "promo.scss";
-@import "sample.scss";
-@import "slider.scss";
-@import "social.scss";
-@import "variables.scss";
+//Базовые стили
 
-// Шрифты
+@import "./base/fonts.scss";
+@import "./base/base.scss";
 
-@import "fonts.scss";
+//Миксины и переменные
+
+@import "./mixins.scss";
+@import "./vareables.scss";
+
+//Общие блоки для всех страниц
+
+@import "./blocks/common/page-header.scss";
+@import "./blocks/common/main-nav.scss";
+@import "./blocks/common/page.scss";
+@import "./blocks/common/main.scss";
+@import "./blocks/common/logo.scss";
+@import "./blocks/common/footer.scss";
+@import "./blocks/common/button.scss";
+@import "./blocks/common/social.scss";
+@import "./blocks/common/dev.scss";
+
+//Блоки главной страницы
+
+@import "./blocks/index/promo.scss";
+@import "./blocks/index/program.scss";
+@import "./blocks/index/sample.scss";
+@import "./blocks/index/advantages.scss";
