@@ -1,15 +1,12 @@
 .promo {
   @include background-green;
-  background-image: $gradient, url("../../../img/index-background-desktop.png");
-  background-size: 100%;
+  background-image: url("../../../img/index-background-desktop.png");
   background-repeat: no-repeat;
 }
 
 .promo__title {
+  @include common-title;
   color: $base-white;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .promo__slogan {

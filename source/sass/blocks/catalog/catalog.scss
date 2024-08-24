@@ -1,0 +1,20 @@
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__title {
+  @include common-title;
+}
+
+.product__link {
+  @include link-reset;
+  color: $base-black;
+}
+
+.product__title {
+  @include product-title;
+}
+
+.product__info {
+  @include product-info;
+}

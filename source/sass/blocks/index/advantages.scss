@@ -1,6 +1,6 @@
 .advantages__list {
   @include list-reset;
-  @include text;
+  @include common-text;
 }
 
 .advantages__title {

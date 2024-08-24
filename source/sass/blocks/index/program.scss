@@ -14,7 +14,7 @@
 }
 
 .program__text {
-  @include text;
+  @include common-text;
 }
 
 .program__link {
