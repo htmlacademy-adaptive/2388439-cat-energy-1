@@ -7,4 +7,6 @@
 
 .main-nav__link {
   @include link-reset;
+  color: $base-black;
+  text-transform: uppercase;
 }

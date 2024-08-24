@@ -2,10 +2,30 @@
   background-color: $sample-gray;
 }
 
+.sample__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
 .sample__text {
   @include text;
 }
 
 .sample__description {
   @include text;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.sample__price-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.sample__value {
+  text-transform: uppercase;
 }

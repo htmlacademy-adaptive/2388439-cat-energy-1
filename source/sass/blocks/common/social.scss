@@ -4,4 +4,5 @@
 
 .social__link {
   @include link-reset;
+  color: $base-black;
 }
