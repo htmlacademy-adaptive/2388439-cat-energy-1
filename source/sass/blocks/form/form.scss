@@ -1,0 +1,39 @@
+.form__title {
+  @include common-title;
+}
+
+.form__module {
+  @include form-common-text;
+  color: $dark-gray;
+}
+
+.form__module-list {
+  @include list-reset;
+}
+
+.form__text-input::placeholder {
+  @include form-common-text;
+  color: $dark-gray;
+}
+
+.form__field-input::placeholder {
+  @include form-common-text;
+  color: $dark-gray;
+}
+
+.form__comment-input {
+  @include form-common-text;
+  color: $dark-gray;
+}
+
+.form__button {
+  @include product-title;
+  border: none;
+}
+
+.form__submit-note {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
