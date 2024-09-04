@@ -1,5 +1,18 @@
 .page-header {
-  display: flex;
   background-color: $base-white;
-  flex-direction: column;
+  padding: 13px 21px 14px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    height: 59px;
+  }
 }

@@ -1,4 +1,10 @@
 .dev {
   @include link-reset;
   color: $dark-gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dev__name {
+  margin: 0;
 }

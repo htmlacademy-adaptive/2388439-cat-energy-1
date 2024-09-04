@@ -1,3 +1,9 @@
+.advantages {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 49px;
+}
+
 .advantages__list {
   @include list-reset;
   @include common-text;
@@ -7,4 +13,20 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.advantages__item {
+  padding-left: 80px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.advantages__item:last-child {
+  margin: 0;
+}
+
+.advantages__text {
+  margin: 0;
 }

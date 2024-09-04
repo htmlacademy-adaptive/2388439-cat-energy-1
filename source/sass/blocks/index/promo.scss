@@ -1,12 +1,19 @@
 .promo {
-  @include background-green;
+  //@include background-green;
+  background-size: 100%;
   background-image: url("../../../img/index-background-desktop.png");
   background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .promo__title {
   @include common-title;
   color: $base-white;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
 
 .promo__slogan {
@@ -15,4 +22,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.promo__button {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

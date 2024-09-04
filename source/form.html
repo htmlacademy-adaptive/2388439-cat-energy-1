@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="whdth=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <title>Интернет-магазин Cat Energy</title>
+  <title>Форма Cat Energy</title>
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="logo" href="index.html">
+    <a class="page-header__logo logo" href="index.html" aria-current="page">
       <img class="logo__image logo__image--icon" src="img/icon-images.svg" width="33" height="38" alt="Супер-кот в маске на желтом фоне">
-      <img class="logo__image logo__image-title" src="img/logo-title.svg" width="101" height="18" alt="Логотип catenergy">
+      <img class="logo__image-title" src="img/logo-title.svg" width="101" height="18" alt="Логотип Cat Energy">
     </a>
     <nav class="main-nav main-nav--is-close">
       <button class="btn-burger">
@@ -33,7 +33,7 @@
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-      <fieldset class="form__module">
+      <fieldset class="form__module module-info">
         <legend class="visually-hidden">Информация о питомце</legend>
         <ul class="form__module-list">
           <li class="form__module-item">
@@ -50,27 +50,25 @@
           </li>
         </ul>
       </fieldset>
-
-      <fieldset class="form__module">
+      <fieldset class="form__module module-diet">
         <legend class="visually-hidden">Какая диета интересует</legend>
         <ul class="form__module-list">
-          <li class="form__module-item">
+          <li class="form__module-radio">
             <input class="form__radio-input" type="radio" name="diet" id="lose-weight" value="lose-weight" checked>
             <label class="form__radio-label" for="lose-weight">Похудение</label>
           </li>
-          <li class="form__module-item">
+          <li class="form__module-radio">
             <input class="form__radio-input" type="radio" name="diet" id="weight-gain" value="weight-gain">
             <label class="form__radio-label" for="weight-gain">Набор массы</label>
           </li>
-          <li class="form__module-item">
+          <li class="form__module-radio">
             <input class="form__radio-input" type="radio" name="diet" id="advice" value="advice">
             <label class="form__radio-label" for="advice">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </fieldset>
-
-      <fieldset class="form__module">
-        <legend class="form__module-legend">Контактрые данные(владельца кота)</legend>
+      <fieldset class="form__module module-contacts">
+        <legend class="form__module-legend legend-contacts">Контактрые&nbsp;данные<br>(владельца кота)</legend>
         <ul class="form__module-list">
           <li class="form__module-item">
             <label class="form__field-label" for="e-mail">E-mail:*</label>
@@ -82,28 +80,27 @@
           </li>
         </ul>
       </fieldset>
-
-      <fieldset class="form__module">
-        <legend class="form__module-legend">Комментарий</legend>
+      <fieldset class="form__module module-comment">
+        <legend class="form__module-legend legend-comment">Комментарий</legend>
         <label class="form__comment-label" for="comment" aria-label="Комментарий"></label>
         <textarea class="form__comment-input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__module">
-        <legend class="form__module-legend">Дополнительно:</legend>
+      <fieldset class="form__module module-extra">
+        <legend class="form__module-legend legent-extra">Дополнительно:</legend>
         <ul class="form__module-list">
-          <li class="form__module-item">
+          <li class="form__module-check">
             <input class="form__checkbox-input" type="checkbox" checked id="sweetener" name="sweetener">
             <label class="form__checkbox-label" for="sweetener">сахарозаменитель</label>
           </li>
-          <li class="form__module-item">
+          <li class="form__module-check">
             <input class="form__checkbox-input" type="checkbox" id="water" name="water">
             <label class="form__checkbox-label" for="water">питьевая вода</label>
           </li>
-          <li class="form__module-item">
+          <li class="form__module-check">
             <input class="form__checkbox-input" type="checkbox" id="milk" name="milk">
             <label class="form__checkbox-label" for="milk">молоко</label>
           </li>
-          <li class="form__module-item">
+          <li class="form__module-check">
             <input class="form__checkbox-input" type="checkbox" id="vitamins" name="vitamins">
             <label class="form__checkbox-label" for="vitamins">витамины</label>
           </li>
@@ -117,8 +114,8 @@
 
   <footer class="footer">
 
-    <div class="footer__address-container">
-      <p class="footer__address-titles">Приглашаем к сотрудничеству дилеров!</p>
+    <div class="footer__address-container footer__address-container--bg">
+      <p class="footer__address-title">Приглашаем к сотрудничеству дилеров!</p>
       <p class="footer__address-text">ул. Большая конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
 
@@ -130,11 +127,9 @@
     </div>
 
     <div class="footer__link-container">
-
-      <a class="logo" href="index.html" aria-current="page">
+      <a class="logo footer__logo" href="index.html" aria-current="page">
         <img class="logo__image-title" src="img/logo-title.svg" width="101" height="18" alt="Логотип Cat Energy">
       </a>
-
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__list">
@@ -149,7 +144,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--tg" href="https://t.me/htmlacademy" aria-label="Наш канал в Telegram">
+            <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Наш канал в Telegram</span>
             </a>
           </li>

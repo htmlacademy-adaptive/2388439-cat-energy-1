@@ -1,8 +1,19 @@
 .logo {
   text-decoration: none;
+  height: 38px;
+  display: flex;
+  justify-content: center;
 }
 
-.logo {
-  height: 38px;
-  padding: 14px 20px;
+.logo__image {
+  position: absolute;
+  left: 20px;
+}
+
+.logo__image-title {
+  display: block;
+}
+
+.footer__logo {
+  margin-bottom: 40px;
 }

@@ -1,22 +1,37 @@
 .sample {
   background-color: $sample-gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
 }
 
 .sample__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .sample__text {
   @include common-text;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .sample__description {
   @include common-text;
+  background-color: $sample-gray;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  width: 77px;
+  height: 24px;
+  text-align: center;
+  position: absolute;
+  top: 44px;
+  left: 24px;
+  text-transform: lowercase;
 }
 
 .sample__price-text {
@@ -24,8 +39,30 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .sample__value {
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.sample__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sample__item {
+  border: 1px solid $special-gray;
+  border-radius: 3px;
+  width: 122px;
+  height: 56px;
+  position: relative;
 }

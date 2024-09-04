@@ -1,15 +1,12 @@
 //Базовые стили
-
 @import "./base/fonts.scss";
 @import "./base/base.scss";
 
 //Миксины и переменные
-
 @import "./mixins.scss";
 @import "./vareables.scss";
 
 //Общие блоки для всех страниц
-
 @import "./blocks/common/page-header.scss";
 @import "./blocks/common/main-nav.scss";
 @import "./blocks/common/page.scss";
@@ -19,19 +16,14 @@
 @import "./blocks/common/button.scss";
 @import "./blocks/common/social.scss";
 @import "./blocks/common/dev.scss";
-
-//Блоки главной страницы
-
+@import "./blocks/common/btn-burger.scss";
 @import "./blocks/index/promo.scss";
 @import "./blocks/index/program.scss";
 @import "./blocks/index/sample.scss";
 @import "./blocks/index/advantages.scss";
-
-//Блоки страницы каталога
-
+@import "./blocks/common/map.scss";
 @import "./blocks/catalog/catalog.scss";
 @import "./blocks/catalog/other-action.scss";
 
 //Блоки формы подбора программы
-
 @import "./blocks/form/form.scss"

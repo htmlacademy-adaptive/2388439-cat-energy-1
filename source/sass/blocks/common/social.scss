@@ -1,8 +1,23 @@
 .social__list {
   @include list-reset;
+  padding: 20px;
+  margin-bottom: 20px;
+  outline: 2px solid #00ff15;
+  outline-offset: -2px;
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  justify-content: center;
+  gap: 24px;
 }
 
 .social__link {
   @include link-reset;
   color: $base-black;
+}
+
+.social__item {
+  outline: 2px solid #ff0000;
+  outline-offset: -2px;
+  width: 28px;
+  height: 22px;
 }
