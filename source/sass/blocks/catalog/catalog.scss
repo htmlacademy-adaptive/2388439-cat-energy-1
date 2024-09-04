@@ -2,8 +2,34 @@
   @include list-reset;
 }
 
+.product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px 24px;
+}
+
+.product__title {
+  margin: 0;
+}
+
+.product__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.catalog__wrapper {
+  width: 50%;
+}
+
 .catalog__title {
   @include common-title;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 41px;
+  padding-left: 20px;
 }
 
 .product__link {
@@ -19,9 +45,3 @@
   @include product-info;
 }
 
-.catalog__item {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 20px 24px;
-}
