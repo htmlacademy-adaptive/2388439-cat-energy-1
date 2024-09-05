@@ -1,7 +1,9 @@
 .other-action {
   @include background-green;
-  background-image: url("../../../img/cat-carrier-mobile.png");
+  background-image: url("../../../img/icon-gift.svg"), url("../../../img/cat-carrier-mobile.png");
   background-repeat: no-repeat;
+  background-size: 78px 80px, cover;
+  background-position: center top 58px, center;
   height: 290px;
 }
 
@@ -11,6 +13,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+  text-align: center;
+  padding-top: 187px;
 }
 
 .catalog__product-description {

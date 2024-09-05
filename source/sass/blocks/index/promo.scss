@@ -1,5 +1,4 @@
 .promo {
-  //@include background-green;
   background-size: 100%;
   background-image: url("../../../img/index-background-desktop.png");
   background-repeat: no-repeat;
@@ -24,4 +23,40 @@
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+    background: none;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #000000;
+    padding: 0;
+    padding-top: 35px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+    margin-left: 90px;
+    margin-bottom: 50px;
+  }
+
+  .promo__button {
+    position: absolute;
+    top: 264px;
+    width: 244px;
+    left: 120px;
+  }
 }

@@ -10,10 +10,7 @@
 .program__item {
   background-color: $basic-grey;
   min-height: 226px;
-  padding-left: 20px;
-  padding-right: 33px;
-  padding-top: 30px;
-  margin-bottom: 20px;
+  padding: 30px 33px 20px 20px;
 }
 
 
@@ -37,4 +34,38 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .program__item {
+    padding: 77px 316px 53px 52px;
+    margin-bottom: 30px;
+  }
+
+  .program__item:last-child {
+    margin-bottom: 45px;
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .program__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  .program__link {
+    line-height: 30px;
+  }
 }

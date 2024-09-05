@@ -17,3 +17,23 @@
 .footer__logo {
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    height: 50px;
+    min-width: 174px;
+    column-gap: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    position: static;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    height: 59px;
+  }
+}
