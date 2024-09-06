@@ -5,6 +5,18 @@
   justify-content: space-between;
 }
 
+.dev__img {
+  width: 27px;
+  height: 34px;
+}
+
 .dev__name {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .dev {
+    width: 168px;
+    align-items: center;
+  }
 }

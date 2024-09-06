@@ -23,10 +23,40 @@
   margin-bottom: 24px;
 }
 
-.advantages__item:last-child {
+.advantages__text {
   margin: 0;
 }
 
-.advantages__text {
-  margin: 0;
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 32px;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 597px;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  .advantages__item {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 57px;
+    align-self: end;
+  }
+
+  .advantages__text {
+    @include common-text-tablet;
+  }
 }

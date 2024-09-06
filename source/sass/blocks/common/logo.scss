@@ -24,11 +24,13 @@
     min-width: 174px;
     column-gap: 14px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .logo__image {
     position: static;
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
   }
 }
 

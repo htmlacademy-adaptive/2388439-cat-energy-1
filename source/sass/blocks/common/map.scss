@@ -1,3 +1,15 @@
 .map {
   margin-bottom: 40px;
 }
+
+.map__frame {
+  border: none;
+  width: 100%;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__frame {
+    height: 400px;
+  }
+}

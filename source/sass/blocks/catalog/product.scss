@@ -1,0 +1,42 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px 24px;
+}
+
+.product__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.product__link {
+  @include link-reset;
+  color: $base-black;
+}
+
+.product__title {
+  @include product-title;
+  margin: 0;
+}
+
+.product__info {
+  @include product-info;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    height: 510px;
+  }
+
+  .product__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}

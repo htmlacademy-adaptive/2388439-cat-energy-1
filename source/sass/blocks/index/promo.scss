@@ -25,6 +25,10 @@
   padding-bottom: 29px;
 }
 
+.promo__button {
+  margin-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .promo {
     position: relative;
@@ -58,5 +62,6 @@
     top: 264px;
     width: 244px;
     left: 120px;
+    margin-bottom: 0;
   }
 }

@@ -78,23 +78,25 @@
       <p class="sample__text">Борис сбросил 5&nbsp;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок!
         При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="sample__list">
-        <div class="sample__item">
-          <dt class="sample__description">Снижение веса</dt>
-          <dd class="sample__value">5&nbsp;кг</dd>
-        </div>
-        <div class="sample__item">
-          <dt class="sample__description">Затрачено времени</dt>
-          <dd class="sample__value">60&nbsp;дней</dd>
-        </div>
-      </dl>
-      <p class="sample__price-text">Затраты на питание: 15&nbsp;000&nbsp;₽</p>
+      <div class="sample__wrapper">
+        <dl class="sample__list">
+          <div class="sample__item">
+            <dt class="sample__description sample__description--block-1">Снижение веса</dt>
+            <dd class="sample__value">5&nbsp;кг</dd>
+          </div>
+          <div class="sample__item">
+            <dt class="sample__description sample__description--block-2">Затрачено времени</dt>
+            <dd class="sample__value">60&nbsp;дней</dd>
+          </div>
+        </dl>
+        <p class="sample__price-text">Затраты на питание: <span>15&nbsp;000&nbsp;₽</span></p>
+      </div>
       <div class="slider">
-        <div class="slider__images"> <!-- Изменил названия изображений и альты как пологается, без шуток. -->
+        <div class="slider__images">
           <img class="slider__before" src="img/well-fed-cat.png" width="592" height="512" alt="Фотография кота Бориса до замены обычного корма на корм Cat Energy.">
           <img class="slider__after" src="img/cat-lost-weight.png" width="592" height="512" alt="Фотография кота Бориса сбросившего 5 килограмм через 2 месяца на диете Cat Energy">
         </div>
-        <div class="slider__compare"> <!-- Обертка это полоса которая будет разделять 2 фотки. Как? Пока не знаю. А в центре кнопка за которую тянуть.-->
+        <div class="slider__compare">
           <button class="slider__images-compare">до после</button>
         </div>
       </div>
@@ -104,15 +106,13 @@
   <footer class="footer">
 
     <div class="footer__address-container">
-      <p class="footer__address-title">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer__address-text">ул. Большая конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="footer__address-title">Приглашаем к сотрудничеству<br> дилеров!</p>
+      <p class="footer__address-text">ул. Большая<br> конюшенная, д. 19/8<br> <span>Санкт-Петербург</span></p>
     </div>
 
     <div class="map">
       <h2 class="visually-hidden">Схема проезда</h2>
-      <picture class="map__picture">
-        <img class="map__img" src="img/alt-location.png" width="320" height="362" alt="Схема проезда">
-      </picture>
+        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?ll=30.321279%2C59.939728&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&sctx=ZAAAAAgBEAAaKAoSCTpdFhObFz1AEc8xIHu9801AEhIJZR2OrtLdyz8RfCk8aHbdwT8iBgABAgMEBSgKOABA5a4HSAFiSHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vTWVkaWFGbG93L1N0b3JpZXNDb250ZW50VHlwZT1vbGRfbWVkaWFfY2xhc3NpZmllcmoCcnWdAc3MTD2gAQCoAQC9Af0QG6HCAR67t8jOpgLTrNeb5AbG1I3fwASjq%2FbB7AH4q77E7AKCAinQlNC%2B0LHQsNCy0LjRgtGMINC60LDRgNGC0YMg0L3QsCDRgdCw0LnRgooCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=30.321279%2C59.939728&source=serp_navig&sspn=0.046704%2C0.013039&tab=inside&text=%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BA%D0%B0%D1%80%D1%82%D1%83%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82&z=15.4"></iframe>
     </div>
 
     <div class="footer__link-container">

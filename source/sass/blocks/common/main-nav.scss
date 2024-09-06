@@ -4,10 +4,6 @@
   position: relative;
 }
 
-.main-nav--is-close {
-  display: none;
-}
-
 .main-nav__list {
   @include list-reset;
   font-weight: 400;
