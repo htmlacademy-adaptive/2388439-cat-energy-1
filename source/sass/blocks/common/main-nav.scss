@@ -36,3 +36,9 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__link {
+    color: $base-white;
+  }
+}
