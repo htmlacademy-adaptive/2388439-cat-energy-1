@@ -16,7 +16,10 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
