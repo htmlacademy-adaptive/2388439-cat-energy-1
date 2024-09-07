@@ -30,11 +30,13 @@
   .product {
     display: flex;
     flex-direction: column;
+    background-color: $basic-grey;
     padding: 0;
   }
 
   .product__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    flex-direction: column;
   }
 }
