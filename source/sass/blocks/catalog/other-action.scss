@@ -18,22 +18,14 @@
   padding-top: 187px;
 }
 
-.catalog__product-description {
-  @include product-title;
-}
+@media (min-width: $tablet-width) {
+  .catalog__title--other {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
 
-.catalog__product-text {
-  @include product-info;
-}
-
-.catalog__product-button {
-  background-color: $basic-grey;
-  color: $dark-gray;
-}
-
-.catalog__title--other {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  .catalog__list--other {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,5 +1,6 @@
 .catalog__list {
   @include list-reset;
+  margin-bottom: 25px;
 }
 
 .catalog__wrapper {
@@ -14,12 +15,29 @@
   padding-left: 20px;
 }
 
+.catalog__item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px 24px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 30px;
     padding-right: 30px;
+    column-gap: 60px;
+    margin-bottom: 40px;
+  }
+
+  .catalog__title {
+    @include common-title-tablet;
+    margin: 0;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 84px;
   }
 }

@@ -28,14 +28,13 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    display: flex;
-    flex-direction: column;
-    padding: 0 37px 40px 37px;
     background-color: $basic-grey;
+    padding: 0;
   }
 
   .product__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    flex-direction: column;
   }
 }
