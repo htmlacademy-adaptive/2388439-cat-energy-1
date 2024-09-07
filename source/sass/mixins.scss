@@ -15,7 +15,7 @@
   display: block;
 }
 
-//Параметры заголовков h1
+//Параметры заголовков
 
 @mixin common-title {
   font-family: "Oswald", sans-serif;
@@ -23,6 +23,14 @@
   font-size: 36px;
   line-height: 36px;
 }
+
+@mixin common-title-big {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}
+
 
 //Параметры основгого текста на страницах
 
@@ -33,11 +41,26 @@
   line-height: 18px;
 }
 
+@mixin common-text-big {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 @mixin common-text-tablet {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+@mixin form-common-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 //Параметры заголовков в карточке товаров
@@ -57,10 +80,9 @@
   line-height: 16px;
 }
 
-@mixin form-common-text {
+@mixin form-button {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
 }

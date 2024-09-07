@@ -1,0 +1,22 @@
+.form__submit-note {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .field-submit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__submit-note {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+

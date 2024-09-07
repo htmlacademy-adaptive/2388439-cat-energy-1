@@ -9,10 +9,7 @@
 }
 
 .form__text {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include common-text;
   margin: 0;
   margin-bottom: 39px;
   padding-right: 20px;
@@ -114,16 +111,6 @@
   margin-bottom: 21px;
 }
 
-.form__submit-note {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  margin: 0;
-  margin-bottom: 32px;
-  text-align: center;
-}
-
 .form__module-radio {
   margin-bottom: 19px;
 }
@@ -191,3 +178,108 @@
 .form__checkbox-label {
   padding: 6px 0 6px 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .form__title {
+    @include common-title-big;
+    margin: 27px 0 54px 0;
+  }
+
+  .form__text {
+    @include common-text-big;
+    margin: 0;
+    margin-bottom: 66px;
+    text-transform: uppercase;
+    padding-right: 305px;
+  }
+
+  .module-info {
+    margin-bottom: 72px;
+  }
+
+  .module-diet {
+    margin-bottom: 65px;
+  }
+
+  .module-contacts {
+    margin-bottom: 65px;
+  }
+
+  .module-comment {
+    margin-bottom: 65px;
+  }
+
+  .form__module,
+  .form__text-label,
+  .form__field-label,
+  .form__field-input {
+    @include common-text-big;
+  }
+
+  .form__text-input {
+    @include common-text-big;
+    padding: 11px 20px;
+  }
+
+  .form__text-input::placeholder {
+    @include common-text-big;
+  }
+
+  .form__field-input::placeholder {
+    @include common-text-big;
+  }
+
+  .form__module-legend {
+    @include common-title;
+    text-transform: none;
+  }
+
+  .legend-contacts {
+    margin-bottom: 76px;
+  }
+
+  .legend-comment {
+    margin-bottom: 87px;
+  }
+
+  .legent-extra {
+    margin-bottom: 57px;
+  }
+
+  .form__comment-input {
+    @include common-text-big;
+    color: $dark-gray;
+    min-width: 100%;
+    min-height: 175px;
+    padding: 11px;
+  }
+
+  .form__comment-input::placeholder {
+    @include common-text-big;
+  }
+
+  .module-list--extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 52px;
+    gap: 32px 123px;
+  }
+
+  .form__module-check {
+    margin: 0;
+  }
+
+  .form__module-check:last-child {
+    margin: 0;
+  }
+
+  .form__button {
+    @include form-button;
+  }
+}
+
