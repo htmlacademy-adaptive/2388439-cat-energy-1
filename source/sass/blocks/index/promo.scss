@@ -65,3 +65,38 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    bottom: 187px;
+    background-size: 50%;
+    background-position: right;
+    background-image: url("../../../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    padding: 0;
+    min-height: 694px;
+  }
+
+  .promo__title {
+    position: absolute;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    top: 224px;
+    left: 190px;
+  }
+
+  .promo__slogan {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 380px;
+    left: 190px;
+  }
+
+  .promo__button {
+    width: 244px;
+    left: 190px;
+    top: 451px;
+  }
+}

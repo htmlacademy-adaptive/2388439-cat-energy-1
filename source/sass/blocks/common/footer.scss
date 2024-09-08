@@ -65,3 +65,19 @@
     align-items: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer__address-container {
+    position: absolute;
+    padding: 60px 78px 60px 80px;
+    column-gap: 87px;
+    z-index: 2;
+    top: 95px;
+    left: 110px;
+  }
+
+  .footer {
+    position: relative;
+    background-color: $basic-grey;
+  }
+}

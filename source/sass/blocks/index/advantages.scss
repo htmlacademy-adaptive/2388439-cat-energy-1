@@ -60,3 +60,24 @@
     @include common-text-tablet;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    position: relative;
+    bottom: 43px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 0;
+  }
+
+  .advantages__title {
+    margin-bottom: 32px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 94px;
+    min-height: 280px;
+  }
+}

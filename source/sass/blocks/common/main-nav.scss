@@ -38,6 +38,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list {
+    position: relative;
+    z-index: 1;
+  }
+
   .main-nav__link {
     color: $base-white;
   }

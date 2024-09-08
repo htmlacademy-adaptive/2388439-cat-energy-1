@@ -70,3 +70,38 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program {
+    position: relative;
+    bottom: 114px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .program__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 30px;
+  }
+
+  .program__item {
+    margin: 0;
+    padding: 77px 61px 55px 52px;
+  }
+
+  .program__item:last-child {
+    margin: 0;
+  }
+
+  .program__title {
+    padding-left: 214px;
+    margin-bottom: 73px;
+  }
+
+  .program__text {
+    margin: 0;
+    margin-bottom: 23px;
+}
+}
