@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  background-color: $base-white;
 }
 
 .main-nav__list {
@@ -24,9 +25,7 @@
   .main-nav {
     justify-content: flex-end;
   }
-}
 
-@media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
     justify-content: flex-end;
@@ -43,7 +42,11 @@
     z-index: 1;
   }
 
-  .main-nav__link {
+  .main-nav__list--index a {
     color: $base-white;
+  }
+
+  .main-nav {
+    background-color: transparent;
   }
 }
