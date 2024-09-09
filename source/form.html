@@ -31,50 +31,51 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
       <h1 class="form__title">Подбор программы</h1>
-      <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-
-      <fieldset class="form__module module-info">
-        <legend class="visually-hidden">Информация о питомце</legend>
-        <ul class="form__module-list">
-          <li class="form__module-item">
-            <label class="form__text-label" for="name">Имя:*</label>
-            <input class="form__text-input" type="text" name="name" id="name" placeholder="Барсик">
-          </li>
-          <li class="form__module-item">
-            <label class="form__text-label" for="weigth">Вес(кг):*</label>
-            <input class="form__text-input" type="text" name="name" id="weigth" placeholder="7">
-          </li>
-          <li class="form__module-item">
-            <label class="form__text-label" for="age">Возраст(лет):*</label>
-            <input class="form__text-input" type="text" name="name" id="age" placeholder="7">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__module module-diet">
-        <legend class="visually-hidden">Какая диета интересует</legend>
-        <ul class="form__module-list">
-          <li class="form__module-radio">
-            <input class="form__radio-input" type="radio" name="diet" id="lose-weight" value="lose-weight" checked>
-            <label class="form__radio-label" for="lose-weight">Похудение</label>
-          </li>
-          <li class="form__module-radio">
-            <input class="form__radio-input" type="radio" name="diet" id="weight-gain" value="weight-gain">
-            <label class="form__radio-label" for="weight-gain">Набор массы</label>
-          </li>
-          <li class="form__module-radio">
-            <input class="form__radio-input" type="radio" name="diet" id="advice" value="advice">
-            <label class="form__radio-label" for="advice">Не знаю (нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
+      <p class="form__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+      <div class="form__flex-container">
+        <fieldset class="form__module form__module--info">
+          <legend class="visually-hidden">Информация о питомце</legend>
+          <ul class="form__module-list">
+            <li class="form__module-item">
+              <label class="form__text-label" for="name">Имя:*</label>
+              <input class="form__text-input" type="text" name="name" id="name" placeholder="Барсик">
+            </li>
+            <li class="form__module-item">
+              <label class="form__text-label" for="weigth">Вес(кг):*</label>
+              <input class="form__text-input" type="text" name="name" id="weigth" placeholder="7">
+            </li>
+            <li class="form__module-item">
+              <label class="form__text-label" for="age">Возраст(лет):*</label>
+              <input class="form__text-input" type="text" name="name" id="age" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__module form__module--diet">
+          <legend class="visually-hidden">Какая диета интересует</legend>
+          <ul class="form__module-list">
+            <li class="form__module-radio">
+              <input class="form__radio-input" type="radio" name="diet" id="lose-weight" value="lose-weight" checked>
+              <label class="form__radio-label" for="lose-weight">Похудение</label>
+            </li>
+            <li class="form__module-radio">
+              <input class="form__radio-input" type="radio" name="diet" id="weight-gain" value="weight-gain">
+              <label class="form__radio-label" for="weight-gain">Набор массы</label>
+            </li>
+            <li class="form__module-radio">
+              <input class="form__radio-input" type="radio" name="diet" id="advice" value="advice">
+              <label class="form__radio-label" for="advice">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="form__module module-contacts">
         <legend class="form__module-legend legend-contacts">Контактрые&nbsp;данные (владельца кота)</legend>
-        <ul class="form__module-list">
-          <li class="form__module-item">
+        <ul class="form__module-list form__flex-container">
+          <li class="form__module-item form__module-item--grow">
             <label class="form__field-label" for="e-mail">E-mail:*</label>
             <input class="form__field-input" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com" required>
           </li>
-          <li class="form__module-item">
+          <li class="form__module-item form__module-item--grow">
             <label class="form__field-label" for="telephone">Телефон:*</label>
             <input class="form__field-input" type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90" required>
           </li>
@@ -117,7 +118,7 @@
 
     <div class="footer__address-container footer__address-container--bg">
       <p class="footer__address-title">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer__address-text">ул. Большая конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="footer__address-text">ул. Большая<br> конюшенная, д. 19/8<br> <span>Санкт-Петербург</span></p>
     </div>
 
     <div class="map">

@@ -9,7 +9,10 @@
 }
 
 .form__text {
-  @include common-text;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0;
   margin-bottom: 39px;
   padding-right: 20px;
@@ -41,14 +44,14 @@
   color: $dark-gray;
 }
 
-.module-info {
+.form__module--info {
   border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 46px;
 }
 
-.module-diet {
+.form__module--diet {
   border: none;
   margin: 0;
   padding: 0;
@@ -204,6 +207,7 @@
 
   .module-diet {
     margin-bottom: 65px;
+    border: 1px solid $very-light-gray;
   }
 
   .module-contacts {
@@ -280,5 +284,47 @@
 
   .form__button {
     @include form-button;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 80px;
+    margin-bottom: 70px;
+  }
+
+  .form__module--info,
+  .form__module--diet {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .form__module--diet {
+    box-shadow: 0 0 0 1px $very-light-gray;
+  }
+
+  .form__module-list--contacts {
+    display: flex;
+  }
+
+  .form__module-item--grow {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  .module-contacts {
+    margin-bottom: 0;
+  }
+
+  .legend-comment {
+    margin-bottom: 78px;
+  }
+
+  .module-list--extra {
+    display: flex;
+    justify-content: space-between;
   }
 }
