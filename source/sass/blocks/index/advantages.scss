@@ -18,9 +18,19 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-left: 80px;
   margin: 0;
   margin-bottom: 24px;
+}
+
+.advantages__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $base-green;
+  position: absolute;
+  left: 0;
 }
 
 .advantages__text {
@@ -30,7 +40,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 105px;
     margin-bottom: 32px;
   }
 
@@ -59,12 +69,21 @@
   .advantages__text {
     @include common-text-tablet;
   }
+
+  .advantages__item::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: $base-green;
+    position: absolute;
+    bottom: 102px;
+  }
 }
+
+// Стили для декстопной версии.
 
 @media (min-width: $desktop-width) {
   .advantages {
-    position: relative;
-    bottom: 43px;
     padding-left: 110px;
     padding-right: 110px;
     margin-bottom: 0;

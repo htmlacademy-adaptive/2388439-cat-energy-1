@@ -42,7 +42,6 @@
     padding: 60px 70px;
     justify-content: space-between;
     column-gap: 308px;
-    height: 80px;
   }
 
   .footer__address-title {
@@ -83,5 +82,9 @@
   .footer {
     position: relative;
     background-color: $basic-grey;
+  }
+
+  .footer__link-container {
+    padding: 40px 20px;
   }
 }
