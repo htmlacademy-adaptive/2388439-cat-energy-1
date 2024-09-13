@@ -2,16 +2,6 @@
   background-color: $base-white;
 }
 
-.main-nav--is-open {
-  position: absolute;
-  z-index: 1;
-  min-width: 100%;
-}
-
-.main-nav--is-close .main-nav__list {
-  display: none;
-}
-
 .main-nav__list {
   @include list-reset;
   font-weight: 400;
@@ -38,6 +28,28 @@
 
 .main-nav__link:active {
   opacity: 0.3;
+}
+
+.main-nav--is-open .main-nav__wrapper {
+  position: absolute;
+  z-index: 1;
+  min-width: 100%;
+  background-color: $base-white;
+}
+
+.main-nav--is-close .main-nav__list {
+  display: none;
+}
+
+//Отработка меню при отключенном JS
+
+.main-nav--nojs .btn-burger {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
 }
 
 // Стили для планшетной версии сайта.

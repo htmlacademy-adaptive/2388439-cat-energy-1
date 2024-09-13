@@ -4,7 +4,7 @@
   position: absolute;
   top: 22px;
   right: 19px;
-  z-index: 2;
+  z-index: 4;
   background-color: transparent;
   border: none;
 }
@@ -23,8 +23,6 @@
 
 .main-nav--is-open .btn-burger {
   position: absolute;
-  top: -44px;
-  right: 19px;
 
   &::before,
   &::after {

@@ -19,11 +19,13 @@
         <span class="visually-hidden">Открыть меню</span>
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="catalog.html" aria-current="page">Каталог продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программ</a></li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="catalog.html" aria-current="page">Каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программ</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -179,7 +181,9 @@
         <li class="catalog__item catalog__item--other product--other">
           <h2 class="product__title product__title--other">Сахарозаменитель</h2>
           <dl class="product__info product__info--other">
-            <dt>1 упаковка (100&nbsp;г)</dt>
+            <dt class="visually-hidden">Колличество</dt>
+            <dd>1 упаковка (100&nbsp;г)</dd>
+            <dt class="visually-hidden">Цена</dt>
             <dd>200&nbsp;₽</dd>
           </dl>
           <a class="product__button button product__button--other" href="#">Заказать</a>
@@ -188,7 +192,9 @@
         <li class="catalog__item catalog__item--other product--other">
           <h2 class="product__title product__title--other">Питьевая вода</h2>
           <dl class="product__info product__info--other">
-            <dt>5 литров</dt>
+            <dt class="visually-hidden">Объём</dt>
+            <dd>5 литров</dd>
+            <dt class="visually-hidden">Цена</dt>
             <dd>200&nbsp;₽</dd>
           </dl>
           <a class="product__button button product__button--other" href="#">Заказать</a>
@@ -197,7 +203,9 @@
         <li class="catalog__item catalog__item--other product--other">
           <h2 class="product__title product__title--other">Молоко</h2>
           <dl class="product__info product__info--other">
-            <dt>1 литр</dt>
+            <dt class="visually-hidden">Объём</dt>
+            <dd>1 литр</dd>
+            <dt class="visually-hidden">Цена</dt>
             <dd>100&nbsp;₽</dd>
           </dl>
           <a class="product__button button product__button--other" href="#">Заказать</a>
@@ -206,7 +214,9 @@
         <li class="catalog__item catalog__item--other product--other">
           <h2 class="product__title product__title--other">Витамины</h2>
           <dl class="product__info product__info--other">
-            <dt>1 упаковка (30&nbsp;г)</dt>
+            <dt class="visually-hidden">Объём</dt>
+            <dd>1 упаковка (30&nbsp;г)</dd>
+            <dt class="visually-hidden">Цена</dt>
             <dd>300&nbsp;₽</dd>
           </dl>
           <a class="product__button button product__button--other" href="#">Заказать</a>

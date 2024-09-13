@@ -147,11 +147,12 @@
     padding-top: 0;
     padding-left: 110px;
     padding-right: 110px;
-    background-image: linear-gradient($base-white 30%, $sample-gray 5%);
+    background-image: linear-gradient($base-white 25%, $sample-gray 25%);
   }
 
   .sample__title {
     grid-area: title;
+    margin-bottom: 146px;
   }
 
   .sample__text {
