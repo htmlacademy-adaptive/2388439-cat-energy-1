@@ -100,6 +100,10 @@
     height: 2px;
     border-bottom: 2px solid $base-green;
   }
+
+  .main-nav__item:last-child {
+    border-bottom: none;
+  }
 }
 
 // Стили для десктопной версии сайта.
