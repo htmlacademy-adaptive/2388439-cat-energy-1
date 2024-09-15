@@ -164,6 +164,10 @@ img {
     height: 2px;
     border-bottom: 2px solid #68b738;
   }
+
+  .main-nav__item:last-child {
+    border-bottom: none;
+  }
 }
 @media (min-width: 1440px) {
   .main-nav__list {
