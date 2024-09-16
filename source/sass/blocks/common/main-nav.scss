@@ -31,7 +31,9 @@
 }
 
 .main-nav--is-open .main-nav__wrapper {
+  margin-top: 14px;
   position: absolute;
+  left: 0;
   z-index: 1;
   min-width: 100%;
   background-color: $base-white;
