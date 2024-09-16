@@ -14,6 +14,10 @@
   border-top: 1px solid $light-gray;
 }
 
+.main-nav__item:last-child {
+  border-bottom: 1px solid $light-gray;
+}
+
 .main-nav__link {
   @include link-reset;
   color: $base-black;
@@ -97,6 +101,10 @@
     width: 100%;
     height: 2px;
     border-bottom: 2px solid $base-green;
+  }
+
+  .main-nav__item:last-child {
+    border-bottom: none;
   }
 }
 
