@@ -56,6 +56,7 @@
 
 .sample__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -142,7 +143,7 @@
   .sample {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title slider""paragraph slider""statistics slider";
+    grid-template-areas: "title slider" "paragraph slider" "statistics slider";
     grid-template-rows: auto 210px 210px;
     padding-top: 0;
     padding-left: 110px;

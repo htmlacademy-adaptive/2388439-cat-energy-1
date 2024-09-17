@@ -12,18 +12,6 @@
   bottom: 14px;
 }
 
-.logo__image--icon::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 38px;
-  top: 14px;
-  left: 56px;
-  pointer-events: none;
-  cursor: default;
-  background-color: #28bb28;
-}
-
 .footer__logo {
   width: 120px;
   padding-top: 40px;
@@ -35,6 +23,9 @@
 .page-header__logo {
   width: 190px;
   column-gap: 56px;
+  border-bottom: 1px solid #d9d9d9;
+  display: block;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,15 +39,29 @@
     position: static;
   }
 
+  .logo__image-title {
+    left: 101px;
+    bottom: 52px;
+  }
+
   .footer__logo {
     padding: 0;
     margin: 0;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
     height: 59px;
+  }
+
+  .logo__image-title {
+    left: 170px;
+    bottom: 88px;
   }
 }

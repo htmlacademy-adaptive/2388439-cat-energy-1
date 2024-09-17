@@ -47,6 +47,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    border: none;
+  }
+
   .catalog__list {
     display: grid;
     gap: 60px;
