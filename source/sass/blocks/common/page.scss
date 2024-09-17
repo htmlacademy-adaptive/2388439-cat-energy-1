@@ -9,8 +9,8 @@
 .page__body {
   font-family: "Oswald", sans-serif;
   min-height: 100vh;
-  min-width: 320px;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   color: #000000;
 }
 
@@ -18,4 +18,18 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 767px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
