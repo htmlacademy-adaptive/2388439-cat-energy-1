@@ -20,14 +20,6 @@
   margin: auto;
 }
 
-.page-header__logo {
-  width: 190px;
-  column-gap: 56px;
-  border-bottom: 1px solid #d9d9d9;
-  display: block;
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
   .logo {
     height: 50px;
@@ -40,8 +32,8 @@
   }
 
   .logo__image-title {
-    left: 101px;
-    bottom: 52px;
+    left: 72px;
+    bottom: 16px;
   }
 
   .footer__logo {
@@ -61,7 +53,7 @@
   }
 
   .logo__image-title {
-    left: 170px;
-    bottom: 88px;
+    left: 74px;
+    bottom: 24px;
   }
 }
