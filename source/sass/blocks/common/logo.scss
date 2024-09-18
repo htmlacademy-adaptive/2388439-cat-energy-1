@@ -13,11 +13,10 @@
 }
 
 .footer__logo {
-  width: 120px;
+  display: block;
   padding-top: 40px;
   padding-bottom: 20px;
-  justify-content: center;
-  margin: auto;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
