@@ -121,19 +121,14 @@
     background-color: $base-white;
     font-size: 14px;
     line-height: 14px;
-    top: 44px;
   }
 
   .sample__description--block-1 {
     width: 114px;
-    top: 70px;
-    left: 22px;
   }
 
   .sample__description--block-2 {
     width: 142px;
-    top: 70px;
-    left: 8px;
   }
 }
 
@@ -166,7 +161,6 @@
 
   .sample__wrapper {
     grid-area: statistics;
-    top: 371px;
     display: grid;
     grid-template-rows: 1fr 1fr;
   }
