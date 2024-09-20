@@ -20,12 +20,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo {
-    height: 50px;
-    column-gap: 14px;
-    width: 174px;
-  }
-
   .logo__image {
     position: static;
   }

@@ -294,6 +294,9 @@
     display: grid;
     column-gap: 80px;
     grid-template-columns: repeat(2, 1fr);
+    width: 1220px;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .form__title,

@@ -6,7 +6,6 @@
   background-color: $base-white;
   display: flex;
   padding: 26px 20px;
-  justify-content: space-between;
 }
 
 .footer__address-container--bg {
@@ -60,6 +59,8 @@
 
   .footer__link-container {
     display: flex;
+    height: 37px;
+    padding: 55px 30px;
     justify-content: space-between;
     align-items: center;
   }

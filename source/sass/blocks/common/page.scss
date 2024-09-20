@@ -23,14 +23,13 @@
 
 @media (min-width: $tablet-width) {
   .page__body {
-    width: 768px;
+    width: auto;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page__body {
-    width: 1440px;
-    margin: 0 auto;
+    width: auto;
   }
 }

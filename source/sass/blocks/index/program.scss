@@ -108,7 +108,9 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    padding: 0 110px;
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 71px;
   }
 

@@ -54,7 +54,7 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 597px;
+    height: 597px;
     column-gap: 153px;
     row-gap: 37px;
   }
@@ -75,7 +75,6 @@
     width: 80px;
     height: 80px;
     background-color: $base-green;
-    position: absolute;
     bottom: 102px;
   }
 }
@@ -84,7 +83,9 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding: 0 110px;
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 69px;
   }
 
