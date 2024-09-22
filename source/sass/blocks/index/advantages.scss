@@ -1,6 +1,4 @@
 .advantages {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 49px;
 }
 
@@ -15,9 +13,11 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+  padding: 0;
 }
 
 .advantages__item {
+  width: 280px;
   position: relative;
   padding-left: 80px;
   margin: 0;

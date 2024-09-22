@@ -1,0 +1,31 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.header__container {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.advantages__container {
+  text-align: left;
+}
+
+.sample__container {
+  text-align: left;
+}
+
+.footer__container {
+  background-color: $base-white;
+}
+
+@media (min-width: $tablet-width) {
+  .header__container {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}

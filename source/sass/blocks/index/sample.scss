@@ -1,8 +1,7 @@
 .sample {
   background-color: $sample-gray;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 25px;
+  min-width: max-content;
 }
 
 .sample__title {

@@ -1,5 +1,6 @@
 .main-nav {
   background-color: $base-white;
+  position: relative;
 }
 
 .main-nav__list {
@@ -36,10 +37,9 @@
 
 .main-nav--is-open .main-nav__wrapper {
   position: absolute;
-  top: 72px;
-  left: 0;
-  z-index: 1;
-  min-width: 100%;
+  top: 14px;
+  left: -20px;
+  width: calc(100% + 40px);
   background-color: $base-white;
 }
 

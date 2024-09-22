@@ -1,7 +1,12 @@
+.map {
+  height: 362px;
+}
+
 .map__frame {
   border: none;
   width: 100%;
-  height: 362px;
+  height: 100%;
+
 }
 
 @media (min-width: $tablet-width) {

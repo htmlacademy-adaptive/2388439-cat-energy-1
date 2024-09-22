@@ -1,16 +1,14 @@
-.program {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .program__list {
   @include list-reset;
+  text-align: center;
 }
 
 .program__item {
   background-color: $basic-grey;
   min-height: 226px;
+  width: 280px;
   padding: 30px 33px 18px 20px;
+  text-align: left;
   margin-bottom: 20px;
   position: relative;
 }

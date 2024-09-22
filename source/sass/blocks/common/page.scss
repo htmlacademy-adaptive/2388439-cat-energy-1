@@ -1,6 +1,5 @@
 .page {
   height: 100vh;
-  margin: 0 auto;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
   line-height: 27px;
@@ -10,9 +9,8 @@
 .page__body {
   font-family: "Oswald", sans-serif;
   min-height: 100vh;
-  width: 320px;
-  margin: 0 auto;
   color: #000000;
+  margin: 0;
 }
 
 *,
