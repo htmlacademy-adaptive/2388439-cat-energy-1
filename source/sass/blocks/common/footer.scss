@@ -7,8 +7,12 @@
   background-color: $base-white;
 }
 
+.footer__addres--background {
+  background-color: $basic-grey;
+}
+
 .footer__address-container {
-  background-color: $base-white;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;

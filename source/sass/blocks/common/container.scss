@@ -22,6 +22,10 @@
   background-color: $base-white;
 }
 
+.catalog-other__container {
+  margin-bottom: 35px;
+}
+
 @media (min-width: $tablet-width) {
   .header__container {
     width: auto;
