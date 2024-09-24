@@ -1,18 +1,3 @@
 .page-header {
   background-color: $base-white;
 }
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
-    width: 1220px;
-    padding: 45px 0 75px 0;
-    margin: 0 auto;
-  }
-}
-
-// @media (min-width: $desktop-width) {
-
-// }

@@ -39,8 +39,6 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding-left: 30px;
-    padding-right: 105px;
     margin-bottom: 32px;
   }
 
@@ -55,7 +53,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 597px;
-    column-gap: 153px;
+    column-gap: 148px;
     row-gap: 37px;
   }
 

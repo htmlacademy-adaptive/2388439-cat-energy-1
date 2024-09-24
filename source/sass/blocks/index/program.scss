@@ -5,7 +5,6 @@
 
 .program__item {
   background-color: $basic-grey;
-  min-height: 226px;
   width: 280px;
   padding: 30px 33px 18px 20px;
   text-align: left;
@@ -58,12 +57,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .program__item {
+    width: 708px;
     padding: 77px 316px 53px 52px;
     margin-bottom: 30px;
   }

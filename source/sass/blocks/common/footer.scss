@@ -43,7 +43,7 @@
   margin-bottom: 40px;
 }
 
-.footer__dev-link {
+.footer__dev {
   @include link-reset;
   color: $dark-gray;
   display: flex;
@@ -83,10 +83,13 @@
 
   .footer__link-container {
     display: flex;
-    height: 37px;
-    padding: 55px 30px;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .footer__dev {
+    gap: 23px;
+    padding: 0;
   }
 }
 
