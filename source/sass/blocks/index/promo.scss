@@ -39,8 +39,6 @@
   .promo {
     position: relative;
     background: none;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .promo__title {
@@ -49,9 +47,7 @@
     text-align: left;
     color: #000000;
     padding: 0;
-    padding-top: 35px;
     margin-bottom: 40px;
-    margin-left: 90px;
   }
 
   .promo__slogan {
@@ -59,15 +55,13 @@
     line-height: 20px;
     text-align: left;
     color: #000000;
-    margin-left: 90px;
-    margin-bottom: 50px;
   }
 
   .promo__button {
     position: absolute;
     top: 264px;
     width: 244px;
-    left: 120px;
+    left: 98px;
     margin-bottom: 0;
   }
 }

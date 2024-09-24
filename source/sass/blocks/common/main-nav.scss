@@ -77,6 +77,7 @@
 
   .main-nav--is-close .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {

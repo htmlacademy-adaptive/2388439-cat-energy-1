@@ -4,16 +4,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 30px;
-    align-items: center;
-    column-gap: 52px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
     position: relative;
     z-index: 1;
     background-color: transparent;
@@ -22,3 +12,7 @@
     margin: 0 auto;
   }
 }
+
+// @media (min-width: $desktop-width) {
+
+// }

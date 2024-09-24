@@ -24,23 +24,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo__image {
+  .logo__header {
     position: static;
+    display: flex;
+    align-items: center;
+    gap: 13px;
   }
 
   .logo__image-title {
-    left: 72px;
-    bottom: 16px;
-  }
-
-  .footer__logo {
-    padding: 0;
-    margin: 0;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
+    position: static;
   }
 }
 
