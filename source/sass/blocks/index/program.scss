@@ -101,20 +101,17 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    padding: 0;
-    width: 1220px;
-    margin: 0 auto;
-    margin-bottom: 71px;
+    margin-bottom: 70px;
   }
 
   .program__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    row-gap: 30px;
   }
 
   .program__item {
+    width: 570px;
     margin: 0;
     padding: 77px 61px 55px 52px;
   }

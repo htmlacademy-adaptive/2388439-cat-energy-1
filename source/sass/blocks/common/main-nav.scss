@@ -114,6 +114,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     position: relative;
+    background-color: transparent;
     z-index: 1;
   }
 

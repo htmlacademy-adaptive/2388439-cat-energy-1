@@ -68,27 +68,13 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 0 190px;
     margin-bottom: 121px;
-  }
-
-  .promo::before {
-    content: "";
-    width: 50%;
-    height: 694px;
-    position: absolute;
-    z-index: -1;
-    top: -197px;
-    right: 0;
-    background-image: linear-gradient(to top, $base-white 0, rgba(105, 183, 56, 0.85) 0), url("../../../img/index-background-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
   }
 
   .promo__title {
     text-align: left;
     padding: 0;
-    //padding-left: 190px;
+    padding-left: 80px;
     margin: 0;
     margin-bottom: 40px;
   }
@@ -96,7 +82,7 @@
   .promo__slogan {
     margin: 0;
     padding: 0;
-    //padding-left: 190px;
+    padding-left: 80px;
   }
 
   .promo__button {

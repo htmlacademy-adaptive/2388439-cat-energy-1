@@ -41,11 +41,27 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 30px;
-    margin-bottom: 35px;
   }
 
   .form__container {
     padding: 0 70px 0 70px;
     margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1440px;
+    padding: 0 110px;
+    background-color: transparent;
+  }
+
+  .header__container {
+    padding: 55px 110px;
+  }
+
+  .catalog-other__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

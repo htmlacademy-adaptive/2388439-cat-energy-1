@@ -82,8 +82,6 @@
 @media (min-width: $desktop-width) {
   .advantages {
     padding: 0;
-    width: 1220px;
-    margin: 0 auto;
     margin-bottom: 69px;
   }
 
@@ -92,9 +90,12 @@
   }
 
   .advantages__list {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 94px;
-    min-height: 280px;
+    column-gap: 0;
+    height: 280px;
+  }
+
+  .advantages__item {
+    margin-bottom: 0;
   }
 }
