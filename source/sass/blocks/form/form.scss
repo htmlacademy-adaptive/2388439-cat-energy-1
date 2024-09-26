@@ -323,6 +323,7 @@
 
   .form__module--diet {
     box-shadow: 0 0 0 1px $very-light-gray;
+    grid-column: 2 / 3;
   }
 
   .module-list--extra {
@@ -332,5 +333,9 @@
 
   .form__submit-note {
     text-align: left;
+  }
+
+  .form__module--info {
+    grid-column: 1 / 2;
   }
 }

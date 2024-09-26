@@ -45,7 +45,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 20px 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -92,10 +91,6 @@
     flex-direction: column;
     padding: 26px 38px;
   }
-
-  .product__button--other {
-    width: auto;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -112,6 +107,10 @@
     margin-bottom: 76px;
   }
 
+  .catalog-other__container {
+    margin-bottom: 0;
+  }
+
   .catalog__title--other {
     @include common-title;
     grid-column: 1 / 4;
@@ -126,6 +125,7 @@
   .catalog__list--other {
     padding: 0;
     margin: 0;
+    margin-right: 81px;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -135,6 +135,8 @@
   .catalog__item--other {
     padding: 0;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
   }

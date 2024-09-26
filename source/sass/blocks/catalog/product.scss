@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 20px 24px;
+  padding: 0;
+  padding-bottom: 24px;
 }
 
 .product__image-wrapper {
@@ -41,9 +42,15 @@
   }
 
   .product__button--other {
-    width: 244px;
+    width: auto;
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__button--other {
+    width: 244px;
   }
 }
