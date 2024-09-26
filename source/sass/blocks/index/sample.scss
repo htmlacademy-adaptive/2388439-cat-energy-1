@@ -133,16 +133,7 @@
   .sample {
     padding: 0;
     background-image: linear-gradient($base-white 25%, $sample-gray 25%);
-  }
-
-  .sample__container {
-    display: grid;
-    width: 1220px;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title slider" "paragraph slider" "statistics slider";
-    grid-template-rows: auto 210px 210px;
-    padding: 0;
+    padding-bottom: 75px;
   }
 
   .sample__title {

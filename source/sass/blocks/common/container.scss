@@ -64,4 +64,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .sample__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title slider" "paragraph slider" "statistics slider";
+    grid-template-rows: auto 210px 210px;
+  }
 }
