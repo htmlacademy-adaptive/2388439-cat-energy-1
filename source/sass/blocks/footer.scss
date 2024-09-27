@@ -19,10 +19,9 @@
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding: 26px 0;
   width: 280px;
   min-width: max-content;
-  margin: 0 auto;
   text-align: left;
 }
 
@@ -62,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .footer__address-container {
-    padding: 60px 70px;
+    padding: 60px 0;
     justify-content: space-between;
     column-gap: 308px;
   }
@@ -98,6 +97,8 @@
     column-gap: 87px;
     background-color: #ffffff;
     margin: 0;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .footer__address--background {
