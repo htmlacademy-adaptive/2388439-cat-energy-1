@@ -2,6 +2,10 @@
   margin-bottom: 49px;
 }
 
+.advantages__container {
+  text-align: left;
+}
+
 .advantages__list {
   @include list-reset;
   @include common-text;
@@ -17,7 +21,6 @@
 }
 
 .advantages__item {
-  width: 280px;
   position: relative;
   padding-left: 80px;
   margin: 0;

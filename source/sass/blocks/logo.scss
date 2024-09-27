@@ -35,14 +35,3 @@
     position: static;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .logo {
-    height: 59px;
-  }
-
-  .logo__image-title {
-    left: 74px;
-    bottom: 24px;
-  }
-}

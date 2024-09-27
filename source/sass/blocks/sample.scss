@@ -1,7 +1,11 @@
 .sample {
   background-color: $sample-gray;
-  padding-top: 25px;
   min-width: max-content;
+}
+
+.sample__container {
+  padding-top: 25px;
+  text-align: left;
 }
 
 .sample__title {
