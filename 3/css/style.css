@@ -336,6 +336,7 @@
     padding: 60px 0;
     justify-content: space-between;
     column-gap: 308px;
+    margin: auto;
   }
 
   .footer__address-title {
