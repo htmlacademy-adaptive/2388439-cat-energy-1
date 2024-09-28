@@ -6,6 +6,13 @@
 .sample__container {
   padding-top: 25px;
   text-align: left;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title slider" "paragraph slider" "statistics slider";
+    grid-template-rows: auto 210px 210px;
+  }
 }
 
 .sample__title {

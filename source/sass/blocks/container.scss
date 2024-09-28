@@ -1,34 +1,12 @@
 .container {
   width: 280px;
   margin: auto;
-}
 
-@media (min-width: $tablet-width) {
-  .container {
+  @media (min-width: $tablet-width) {
     width: 708px;
   }
 
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
+  @media (min-width: $desktop-width) {
     width: 1220px;
-  }
-
-  .catalog-other__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .sample__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title slider" "paragraph slider" "statistics slider";
-    grid-template-rows: auto 210px 210px;
   }
 }

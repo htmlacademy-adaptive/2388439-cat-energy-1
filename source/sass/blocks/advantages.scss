@@ -1,5 +1,14 @@
 .advantages {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 69px;
+  }
 }
 
 .advantages__container {
@@ -9,6 +18,20 @@
 .advantages__list {
   @include list-reset;
   @include common-text;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 597px;
+    column-gap: 148px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+    height: 280px;
+  }
 }
 
 .advantages__title {
@@ -18,6 +41,17 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__item {
@@ -25,6 +59,17 @@
   padding-left: 80px;
   margin: 0;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 57px;
+    align-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__item::before {
@@ -34,44 +79,8 @@
   background-color: $base-green;
   position: absolute;
   left: 0;
-}
 
-.advantages__text {
-  margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages {
-    margin-bottom: 32px;
-  }
-
-  .advantages__title {
-    font-size: 60px;
-    line-height: 60px;
-    margin: 0;
-    margin-bottom: 32px;
-  }
-
-  .advantages__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 597px;
-    column-gap: 148px;
-    row-gap: 37px;
-  }
-
-  .advantages__item {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 57px;
-    align-self: end;
-  }
-
-  .advantages__text {
-    @include common-text-tablet;
-  }
-
-  .advantages__item::before {
+  @media (min-width: $tablet-width) {
     content: "";
     width: 80px;
     height: 80px;
@@ -80,25 +89,10 @@
   }
 }
 
-// Стили для декстопной версии.
+.advantages__text {
+  margin: 0;
 
-@media (min-width: $desktop-width) {
-  .advantages {
-    padding: 0;
-    margin-bottom: 69px;
-  }
-
-  .advantages__title {
-    margin-bottom: 32px;
-  }
-
-  .advantages__list {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 0;
-    height: 280px;
-  }
-
-  .advantages__item {
-    margin-bottom: 0;
+  @media (min-width: $tablet-width) {
+    @include common-text-tablet;
   }
 }
