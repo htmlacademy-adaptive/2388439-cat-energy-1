@@ -8,17 +8,15 @@
   gap: 24px;
   border-top: 1px solid $light-special-gray;
   border-bottom: 1px solid $light-special-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    border: none;
+    padding: 0;
+  }
 }
 
 .social__link {
   @include link-reset;
   color: $base-black;
-}
-
-@media (min-width: $tablet-width) {
-  .social__list {
-    margin-bottom: 0;
-    border: none;
-    padding: 0;
-  }
 }

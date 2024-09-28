@@ -12,23 +12,14 @@
   min-width: max-content;
   color: #000000;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-@media (min-width: $tablet-width) {
-  .page__body {
-    width: auto;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__body {
-    width: auto;
-  }
 }

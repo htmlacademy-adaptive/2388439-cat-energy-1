@@ -16,10 +16,8 @@
   margin: 0;
   text-align: center;
   padding-top: 187px;
-}
 
-@media (min-width: $tablet-width) {
-  .other-action__text {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }

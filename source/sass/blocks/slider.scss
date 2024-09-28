@@ -3,8 +3,8 @@
   height: auto;
 }
 
-@media (min-width: $desktop-width) {
-  .slider {
+.slider {
+  @media (min-width: $desktop-width) {
     grid-area: slider;
   }
 }
