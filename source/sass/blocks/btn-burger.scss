@@ -6,6 +6,10 @@
   z-index: 4;
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--is-close .btn-burger::before {
@@ -38,11 +42,5 @@
 
   &::after {
     transform: rotate(-45deg);
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .btn-burger {
-    display: none;
   }
 }
