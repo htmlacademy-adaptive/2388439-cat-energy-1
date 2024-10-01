@@ -1,7 +1,3 @@
-.catalog__wrapper {
-  width: 50%;
-}
-
 .catalog {
   border-top: 1px solid $light-special-gray;
 
@@ -12,6 +8,10 @@
   @media (min-width: $desktop-width) {
     padding: 0;
   }
+}
+
+.catalog__wrapper {
+  width: 50%;
 }
 
 .catalog__list {
@@ -63,9 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include common-title;
     grid-column: 1 / 4;
-    margin-bottom: 80px;
   }
 }
 

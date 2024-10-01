@@ -51,14 +51,14 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-.main-nav__link:hover {
-  opacity: 0.6;
-}
+  &:hover {
+    opacity: 0.6;
+  }
 
-.main-nav__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--is-open .main-nav__wrapper {
@@ -71,6 +71,11 @@
 
 .main-nav--is-close .main-nav__list {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 //Отработка меню при отключенном JS
@@ -84,30 +89,18 @@
   min-height: 0;
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav--is-close .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
-  .main-nav__list--active::after {
-    content: "";
-    position: relative;
-    display: block;
-    bottom: -4px;
-    width: 100%;
-    height: 2px;
-    border-bottom: 2px solid $base-green;
-  }
-
-  .main-nav__link--active::after {
-    content: "";
-    position: relative;
-    display: block;
-    bottom: -4px;
-    width: 100%;
-    height: 2px;
-    border-bottom: 2px solid $base-green;
+.main-nav__link--active {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: relative;
+      display: block;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px solid $base-green;
+    }
   }
 }
 
@@ -128,3 +121,37 @@
     border-bottom: 2px solid $base-white;
   }
 }
+
+.main-nav--is-close .btn-burger::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 8px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--is-open .btn-burger {
+  position: absolute;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+

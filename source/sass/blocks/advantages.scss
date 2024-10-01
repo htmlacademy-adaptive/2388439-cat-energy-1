@@ -38,8 +38,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -57,12 +56,10 @@
 .advantages__item {
   position: relative;
   padding-left: 80px;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 0;
     margin-bottom: 57px;
     align-self: end;
   }

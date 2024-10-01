@@ -9,18 +9,21 @@
 }
 
 .page-header__container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 55px 0;
-  }
   padding-top: 14px;
   padding-bottom: 14px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .page-header--index::before {

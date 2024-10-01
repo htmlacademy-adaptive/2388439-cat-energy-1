@@ -7,9 +7,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 0 75px 0;
     background-image: linear-gradient($base-white 25%, $sample-gray 25%);
-    padding-bottom: 75px;
   }
 }
 
@@ -19,8 +18,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-areas: "title slider" "paragraph slider" "statistics slider";
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 210px 210px;
   }
 }
@@ -29,13 +28,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0;
     margin-bottom: 60px;
   }
 
@@ -47,12 +44,10 @@
 
 .sample__text {
   @include common-text;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 
   @media (min-width: $tablet-width) {
     @include common-text-tablet;
-    margin: 0;
     margin-bottom: 55px;
   }
 
@@ -105,8 +100,7 @@
 
 .sample__value {
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
   text-align: center;
   font-size: 24px;
   line-height: 24px;

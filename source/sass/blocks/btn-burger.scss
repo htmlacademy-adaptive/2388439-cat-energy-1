@@ -11,36 +11,3 @@
     display: none;
   }
 }
-
-.main-nav--is-close .btn-burger::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 10px;
-  left: 8px;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-}
-
-.main-nav--is-open .btn-burger {
-  position: absolute;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 19px;
-    right: 7px;
-    width: 24px;
-    height: 2px;
-    background-color: #000000;
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
