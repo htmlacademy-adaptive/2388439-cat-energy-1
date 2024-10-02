@@ -1,0 +1,1 @@
+var s=document.querySelector(".main-nav"),n=document.querySelector(".btn-burger");s.classList.remove("main-nav--nojs");n.addEventListener("click",function(){s.classList.contains("main-nav--is-close")?(s.classList.remove("main-nav--is-close"),s.classList.add("main-nav--is-open")):(s.classList.add("main-nav--is-close"),s.classList.remove("main-nav--is-open"))});
