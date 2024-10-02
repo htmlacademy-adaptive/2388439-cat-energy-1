@@ -1,0 +1,10 @@
+.slider__before {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider {
+  @media (min-width: $desktop-width) {
+    grid-area: slider;
+  }
+}

@@ -1,0 +1,23 @@
+.other-action {
+  @include background-green;
+  background-image: url("../../../img/icon-gift.svg"), url("../../../img/cat-carrier-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 78px 80px, cover;
+  background-position: center top 58px, center;
+  height: 289px;
+}
+
+.other-action__text {
+  color: $base-white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+  padding-top: 187px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
