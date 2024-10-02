@@ -1,0 +1,156 @@
+.main-nav {
+  background-color: $base-white;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 33px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.main-nav__item {
+  border-top: 1px solid $light-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-nav__item:last-child {
+  border-bottom: 1px solid $light-gray;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.main-nav__link {
+  @include link-reset;
+  color: $base-black;
+  text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--is-open .main-nav__wrapper {
+  position: absolute;
+  top: 14px;
+  left: -20px;
+  width: calc(100% + 40px);
+  background-color: $base-white;
+}
+
+.main-nav--is-close .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+//Отработка меню при отключенном JS
+
+.main-nav--nojs .btn-burger {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+
+.main-nav__link--active {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: relative;
+      display: block;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px solid $base-green;
+    }
+  }
+}
+
+.main-nav__list--index a {
+  @media (min-width: $desktop-width) {
+    color: $base-white;
+  }
+}
+
+.main-nav__list--index .main-nav__link--active::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid $base-white;
+  }
+}
+
+.main-nav--is-close .btn-burger::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 8px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--is-open .btn-burger {
+  position: absolute;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

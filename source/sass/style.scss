@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+//Базовые стили
+@import "./base/fonts.scss";
+@import "./base/base.scss";
+
+//Миксины и переменные
+@import "./mixins.scss";
+@import "./variables.scss";
+
+//Общие блоки для всех страниц
+@import "./blocks/page-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/button.scss";
+@import "./blocks/social.scss";
+@import "./blocks/btn-burger.scss";
+@import "./blocks/map.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/program.scss";
+@import "./blocks/sample.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/product.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/other-action.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/container";
+@import "./blocks/container-other.scss";
+
+//Блоки формы подбора программы
+@import "./blocks/form.scss"

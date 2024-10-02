@@ -1,0 +1,95 @@
+@import "./variables.scss";
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin background-green {
+  background-color: $base-green;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+  display: inline-block;
+}
+
+//Параметры заголовков
+
+@mixin common-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+@mixin common-title-big {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+
+//Параметры основгого текста на страницах
+
+@mixin common-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin common-text-big {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin common-text-tablet {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin form-common-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+//Параметры заголовков в карточке товаров
+
+@mixin product-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin product-info {
+  color: $dark-gray;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin form-button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+@mixin common-title-tablet {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}

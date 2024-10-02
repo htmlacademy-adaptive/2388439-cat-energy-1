@@ -1,0 +1,22 @@
+.social__list {
+  @include list-reset;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  justify-content: center;
+  gap: 24px;
+  border-top: 1px solid $light-special-gray;
+  border-bottom: 1px solid $light-special-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    border: none;
+    padding: 0;
+  }
+}
+
+.social__link {
+  @include link-reset;
+  color: $base-black;
+}

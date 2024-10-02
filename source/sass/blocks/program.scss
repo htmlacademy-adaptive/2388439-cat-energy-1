@@ -1,0 +1,127 @@
+.program {
+  margin: auto;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.program__list {
+  @include list-reset;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.program__item {
+  background-color: $basic-grey;
+  padding: 30px 33px 18px 20px;
+  text-align: left;
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 77px 316px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 61px 55px 52px;
+  }
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: $base-green;
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      background-color: $base-green;
+      border-radius: 50%;
+      position: absolute;
+      top: 92px;
+      right: 93px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      background-color: #68b738;
+      border-radius: 50%;
+      position: absolute;
+      top: 47px;
+      left: 52px;
+    }
+  }
+}
+
+.program__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  padding-left: 70px;
+  margin: 0 0 29px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 214px;
+    margin-bottom: 73px;
+  }
+}
+
+.program__text {
+  @include common-text;
+  margin: 0;
+  border-bottom: 1px solid $light-special-gray;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 40px 0;
+    margin: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 23px 0;
+  }
+}
+
+.program__link {
+  @include link-reset;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $base-black;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
+}
