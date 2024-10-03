@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 0 24px 0;
+  padding: 0 0 24px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -10,6 +10,10 @@
     background-color: $basic-grey;
     padding: 0;
   }
+}
+
+.product__catalog-wrapper {
+  width: 50%;
 }
 
 .product__image-wrapper {
@@ -27,20 +31,4 @@
 .product__title {
   @include product-title;
   margin: 0;
-}
-
-.product__info {
-  @include product-info;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-direction: column;
-  }
-}
-
-.product__button--other {
-  @media (min-width: $desktop-width) {
-    width: 244px;
-  }
 }

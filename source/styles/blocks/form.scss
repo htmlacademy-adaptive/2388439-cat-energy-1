@@ -18,25 +18,6 @@
   }
 }
 
-.form__container {
-  margin-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
-  }
-}
-
-.form__title {
-  @include common-title;
-  margin: 27px 0 37px 0;
-
-  @media (min-width: $tablet-width) {
-    @include common-title-big;
-    margin: 27px 0 54px 0;
-    grid-column: 1 / 3;
-  }
-}
-
 .form__text {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -363,7 +344,7 @@
   }
 }
 
-.module-list--extra {
+.form__module-list--extra {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;

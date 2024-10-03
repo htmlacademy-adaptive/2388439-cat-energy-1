@@ -11,3 +11,9 @@
   padding-bottom: 10px;
   text-align: center;
 }
+
+.button--other {
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}

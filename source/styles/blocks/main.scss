@@ -1,3 +1,22 @@
 .main {
   flex-grow: 1;
 }
+
+.main__form-container {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.form__title {
+  @include common-title;
+  margin: 27px 0 37px;
+
+  @media (min-width: $tablet-width) {
+    @include common-title-big;
+    margin: 27px 0 54px;
+    grid-column: 1 / 3;
+  }
+}

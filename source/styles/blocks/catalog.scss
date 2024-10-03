@@ -10,10 +10,6 @@
   }
 }
 
-.catalog__wrapper {
-  width: 50%;
-}
-
 .catalog__list {
   @include list-reset;
   margin-bottom: 25px;
@@ -38,7 +34,7 @@
 .catalog__title {
   @include common-title;
   text-align: center;
-  margin: 27px 0 41px 0;
+  margin: 27px 0 41px;
 
   @media (min-width: $tablet-width) {
     @include common-title-big;
@@ -88,6 +84,21 @@
 .catalog__product-button {
   background-color: $basic-grey;
   color: $dark-gray;
+}
+
+.catalog__product-title {
+  @include product-title;
+  margin: 0;
+}
+
+.catalog__product-info {
+  @include product-info;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+  }
 }
 
 .catalog--other {
