@@ -101,7 +101,7 @@
   @include link-reset;
   color: $dark-gray;
   display: flex;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 40px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {

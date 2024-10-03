@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 75px 0;
+    padding: 0 0 75px;
     background-image: linear-gradient($base-white 25%, $sample-gray 25%);
   }
 }
@@ -18,9 +18,10 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-areas: "title slider" "paragraph slider" "statistics slider";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 210px 210px;
+    grid-template:
+      "title slider"
+      "paragraph slider" 210px
+      "statistics slider" 210px / 1fr 1fr;
   }
 }
 
@@ -28,7 +29,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -44,7 +45,7 @@
 
 .sample__text {
   @include common-text;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     @include common-text-tablet;
@@ -84,8 +85,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     text-align: end;
     padding: 0;
   }
@@ -100,7 +100,7 @@
 
 .sample__value {
   text-transform: uppercase;
-  margin: 15px 0 0 0;
+  margin: 15px 0 0;
   text-align: center;
   font-size: 24px;
   line-height: 24px;

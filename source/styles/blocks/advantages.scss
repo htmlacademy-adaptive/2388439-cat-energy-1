@@ -23,8 +23,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 597px;
-    column-gap: 148px;
-    row-gap: 37px;
+    gap: 37px 148;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,7 +37,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -56,7 +55,7 @@
 .advantages__item {
   position: relative;
   padding-left: 80px;
-  margin: 0 0 24px 0;
+  margin: 0 0 24px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
