@@ -17,3 +17,8 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
