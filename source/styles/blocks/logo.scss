@@ -16,6 +16,18 @@
   bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    position: static;
+    display: none;
+  }
+}
+
+.logo__image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
