@@ -16,11 +16,19 @@
     <div class="container page-header__container">
       <a class="page-header__logo logo" href="index.html" aria-current="page">
         <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <source type="image/svg" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source type="image/png" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop@1x.png">
+          <source type="image/png" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop@2x.png">
+          <source type="image/webp" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop@1x.webp">
+          <source type="image/webp" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop@2x.webp">
+          <source type="image/svg" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <source type="image/png" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet@1x.png">
+          <source type="image/png" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet@2x.png">
+          <source type="image/webp" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet@1x.webp">
+          <source type="image/webp" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet@2x.webp">
           <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Супер-кот в маске на желтом фоне">
         </picture>
-        <svg class="logo__image-title" width="101" height="18" alt="Логотип Cat Energy">
+        <svg class="logo__image-title" width="101" height="18">
           <use href="../icons/stack.svg#logo-title"></use>
         </svg>
       </a>
@@ -46,10 +54,12 @@
       <div class="container promo__container">
         <h1 class="promo__title">Функциональное<br>питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="images/">
-          <img class="promo__content-image" src="images/index-can-desktop@2x@1x.png" width="280" height="270" alt="Промо изображение. Порция питания для котов Cat Energy Pro. С курицей. 500 грамм.">
+        <picture class="promo__content-image">
+          <source type="image/png" media="(min-width: 1440px)" width="552" height="499" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@1x.png">
+          <source type="image/webp" media="(min-width: 1440px)" width="552" height="499" srcset="images/index-can-desktop@1x.webp, images/index-can-desktop@2x.webp">
+          <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png">
+          <source type="image/webp" media="(min-width: 768px)" width="709" height="609" srcset="images/index-can-tablet@1x.webp, images/index-can-tablet@2x.webp">
+          <img src="images/index-can-mobile@1x.png" width="280" height="270" alt="Промо изображение. Порция питания для котов Cat Energy Pro. С курицей. 500 грамм.">
         </picture>
         <a class="promo__button button" href="form.html">Подобрать&nbsp;программу</a>
       </div>
