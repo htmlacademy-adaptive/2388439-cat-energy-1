@@ -99,7 +99,7 @@
 
 .footer__dev {
   @include link-reset;
-  color: $dark-gray;
+
   display: flex;
   padding: 20px 0 40px;
   justify-content: space-between;
@@ -108,10 +108,17 @@
     gap: 23px;
     padding: 0;
   }
+
+  &:hover{
+    .footer__dev-img {
+      fill: $base-green;
+    }
+  }
 }
 
 .footer__dev-name {
   margin: 0;
+  color: $dark-gray;
 }
 
 .footer__address-text span {
