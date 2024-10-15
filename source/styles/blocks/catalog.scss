@@ -64,13 +64,13 @@
 }
 
 .catalog__item {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  // display: flex;
+  // justify-content: center;
+  // flex-wrap: wrap;
 
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-  }
+  // @media (min-width: $tablet-width) {
+  //   justify-content: space-between;
+  // }
 }
 
 .catalog__product-description {
