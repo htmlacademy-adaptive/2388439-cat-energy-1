@@ -27,10 +27,7 @@
 
 .footer__address {
   background-color: $base-white;
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-  }
+  display: grid;
 }
 
 .footer__address--background {
@@ -109,7 +106,7 @@
     padding: 0;
   }
 
-  &:hover{
+  &:hover {
     .footer__dev-img {
       fill: $base-green;
     }
