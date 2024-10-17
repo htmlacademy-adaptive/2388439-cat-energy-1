@@ -1,10 +1,7 @@
 .other-action {
   @include background-green;
-  background-image: url("../../../img/icon-gift.svg"), url("../../../img/cat-carrier-mobile.png");
-  background-repeat: no-repeat;
-  background-size: 78px 80px, cover;
-  background-position: center top 58px, center;
-  height: 289px;
+  min-height: 289px;
+  background: url("../../icons/icon-gift.svg") top 59px center / 78px 80px no-repeat, linear-gradient(to top, #ffffff 0, rgba(104, 183, 56, 0.85) 0), image-set(url("../../images/promo-bg-mobile@1x.jpg") type("image/jpg") 1x, url("../../images/promo-bg-mobile@2x.jpg") type("image/jpg") 2x, url("../../images/promo-bg-mobile@1x.webp") type("image/webp") 1x, url("../../images/promo-bg-mobile@2x.webp") type("image/webp") 2x) center / cover no-repeat;
 }
 
 .other-action__text {
