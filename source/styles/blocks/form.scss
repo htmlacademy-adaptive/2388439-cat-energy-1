@@ -2,6 +2,26 @@
   border-top: 1px solid $light-special-gray;
   text-align: left;
 
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $light-special-gray;
+    position: absolute;
+    top: 437px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $light-special-gray;
+    position: absolute;
+    top: 607px;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     display: grid;
@@ -259,6 +279,20 @@
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
+
+  &[type="email"] {
+    background-image: url("../../icons/icon-email.svg");
+    background-size: 17px 13px;
+    background-repeat: no-repeat;
+    background-position: right 13px top 16px;
+  }
+
+  &[type="tel"] {
+    background-image: url("../../icons/icon-phone.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: right 13px top 16px;
+  }
 
   @media (min-width: $tablet-width) {
     @include common-text-big;
