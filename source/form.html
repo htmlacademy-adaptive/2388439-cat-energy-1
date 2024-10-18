@@ -81,8 +81,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__module form__module--contacts">
-          <legend class="form__module-legend legend-contacts">Контактрые&nbsp;данные (владельца кота)</legend>
+      </div>
+      <fieldset class="form__module form__module--contacts">
+        <legend class="form__module-legend legend-contacts">Контактрые&nbsp;данные<br> (владельца кота)</legend>
+        <div class="container main__form-container">
           <ul class="form__module-list">
             <li class="form__module-item form__module-item--grow">
               <label class="form__field-label" for="e-mail">E-mail:*</label>
@@ -93,14 +95,18 @@
               <input class="form__field-input" type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__module form__module--comment">
-          <legend class="form__module-legend legend-comment">Комментарий</legend>
+        </div>
+      </fieldset>
+      <fieldset class="form__module form__module--comment">
+        <legend class="form__module-legend legend-comment">Комментарий</legend>
+        <div class="container main__form-container">
           <label class="form__comment-label" for="comment" aria-label="Комментарий"></label>
           <textarea class="form__comment-input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="form__module form__module--extra">
-          <legend class="form__module-legend legent-extra">Дополнительно:</legend>
+        </div>
+      </fieldset>
+      <fieldset class="form__module form__module--extra">
+        <legend class="form__module-legend legent-extra">Дополнительно:</legend>
+        <div class="container main__form-container">
           <ul class="form__module-list form__module-list--extra">
             <li class="form__module-check">
               <input class="form__checkbox-input" type="checkbox" checked id="sweetener" name="sweetener">
@@ -119,14 +125,16 @@
               <label class="form__checkbox-label" for="vitamins">витамины</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
+      </fieldset>
+      <div class="container main__form-container">
         <button class="form__button button" type="submit">Отправить заявку</button>
         <p class="form__submit-note"><sup>*</sup> — Обязательные поля</p>
       </div>
     </form>
   </main>
   <footer class="footer">
-    <section class="footer__address">
+    <section class="footer__address footer__address--background">
       <div class="container footer__container">
         <div class="footer__address-container">
           <p class="footer__address-title">Приглашаем к сотрудничеству<br> дилеров!</p>
