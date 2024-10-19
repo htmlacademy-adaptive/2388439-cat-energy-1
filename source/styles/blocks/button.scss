@@ -1,6 +1,8 @@
 .button {
   @include link-reset;
   @include product-title;
+  display: flex;
+  justify-content: center;
   background-color: $base-green;
   color: $base-white;
   text-transform: uppercase;
@@ -8,6 +10,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+}
+
+.button--more {
+  background-color: $basic-grey;
+  color: $dark-gray;
+  grid-column: 1 / 3;
 }
 
 .button--other {

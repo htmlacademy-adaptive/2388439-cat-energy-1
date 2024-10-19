@@ -13,11 +13,18 @@
 }
 
 .sample__container {
-  padding-top: 25px;
+  display: grid;
+  gap: 20px;
+  padding: 25px 0 40px;
   text-align: left;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 101px;
+    gap: 55px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template:
       "title slider"
       "paragraph slider" 210px
@@ -29,46 +36,56 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: title;
-    margin-bottom: 146px;
   }
 }
 
 .sample__text {
   @include common-text;
-  margin: 0 0 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     @include common-text-tablet;
-    margin-bottom: 55px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: paragraph;
-    margin-bottom: 0;
     width: 436px;
   }
 }
 
 .sample__wrapper {
+  display: grid;
+  gap: 35px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: statistics;
     display: grid;
     grid-template-rows: 1fr 1fr;
+  }
+}
+
+.sample__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 43px;
   }
 }
 
@@ -79,15 +96,12 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     display: flex;
     flex-flow: column wrap;
     text-align: end;
-    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,16 +123,6 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-  }
-}
-
-.sample__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  @media (min-width: $tablet-width) {
-    column-gap: 43px;
-    margin: 0;
   }
 }
 
