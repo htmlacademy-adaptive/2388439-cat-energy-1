@@ -79,12 +79,27 @@
   line-height: 20px;
 }
 
+@mixin product-title-tablet {
+  font-size: 20px;
+  line-height: 24px;
+}
+
 @mixin product-info {
   color: $dark-gray;
   font-family: "Lato", "Verdana", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+}
+
+@mixin product-text-tablet {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin product-info-tablet {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 @mixin form-button {

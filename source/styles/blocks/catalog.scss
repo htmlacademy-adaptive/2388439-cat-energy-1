@@ -41,7 +41,7 @@
   gap: 25px;
 
   @media (min-width: $tablet-width) {
-    gap: 60px;
+    gap: 141px 60px;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 40px;
   }
@@ -58,6 +58,10 @@
 
 .catalog__item {
   border-top: 1px solid $light-special-gray;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .catalog__title--other {
