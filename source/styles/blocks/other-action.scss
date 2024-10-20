@@ -1,7 +1,11 @@
 .other-action {
   @include background-green;
   min-height: 289px;
-  background: url("../../icons/icon-gift.svg") top 59px center / 78px 80px no-repeat, linear-gradient(to top, #ffffff 0, rgba(104, 183, 56, 0.85) 0), image-set(url("../../images/promo-bg-mobile@1x.jpg") type("image/jpg") 1x, url("../../images/promo-bg-mobile@2x.jpg") type("image/jpg") 2x, url("../../images/promo-bg-mobile@1x.webp") type("image/webp") 1x, url("../../images/promo-bg-mobile@2x.webp") type("image/webp") 2x) center / cover no-repeat;
+  background: url("../../icons/icon-gift.svg") top 59px center / 78px 80px no-repeat, linear-gradient(to top, #ffffff 0, rgba(104, 183, 56, 0.85) 0), image-set(url("../../images/promo-bg-mobile@1x.jpg") type("image/jpg") 1x, url("../../images/promo-bg-mobile@2x.jpg") type("image/jpg") 2x, url("../../images/promo-bg-mobile@1x.webp") type("image/webp") 1x, url("../../images/promo-bg-mobile@2x.webp") type("image/webp") 2x) center no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+  }
 }
 
 .other-action__text {

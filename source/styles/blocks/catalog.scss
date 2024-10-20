@@ -15,9 +15,11 @@
   padding-top: 21px;
   gap: 41px;
 
+
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: auto;
+    gap: 165px;
   }
 }
 
@@ -29,9 +31,7 @@
   @media (min-width: $tablet-width) {
     @include common-title-big;
     text-align: left;
-    margin: 0;
     padding: 0;
-    margin-bottom: 84px;
   }
 }
 
@@ -43,7 +43,7 @@
   @media (min-width: $tablet-width) {
     gap: 141px 60px;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 40px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,7 +74,7 @@
     @include common-title;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 80px;
+    padding-left: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,21 +125,20 @@
 .catalog__list--other {
   @media (min-width: $tablet-width) {
     @include common-title-tablet;
-    margin: 0;
     text-align: left;
-    margin-bottom: 84px;
+    margin: 0;
+    padding-bottom: 0;
+    box-shadow: 0 0 0 1px $special-gray;
     grid-template-columns: 1fr;
     gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    margin: 0;
-    margin-right: 81px;
     display: flex;
     flex-direction: column;
-    gap: 0;
     grid-column: 1 / 3;
+    padding: 0;
+    margin-right: 81px;
   }
 }
 
@@ -151,8 +150,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
     padding: 26px 38px;
+    box-shadow: 0 -1px $special-gray;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -169,7 +172,14 @@
   display: grid;
   gap: 25px;
   padding-top: 25px;
+  margin: auto;
+  width: 280px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    gap: 80px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
