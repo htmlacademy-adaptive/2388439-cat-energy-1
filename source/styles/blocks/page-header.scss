@@ -9,20 +9,17 @@
 }
 
 .page-header__container {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-block: 14px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-block: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
-    padding-bottom: 0;
+    padding-block: 50px;
   }
 }
 

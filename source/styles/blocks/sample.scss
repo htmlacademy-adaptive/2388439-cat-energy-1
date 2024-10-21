@@ -8,7 +8,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 75px;
-    background-image: linear-gradient($base-white 25%, $sample-gray 25%);
+    background-image: linear-gradient($base-white 147px, $sample-gray 147px);
   }
 }
 
@@ -26,9 +26,10 @@
 
   @media (min-width: $desktop-width) {
     grid-template:
-      "title slider"
-      "paragraph slider" 210px
-      "statistics slider" 210px / 1fr 1fr;
+      "title slider" 147px
+      "paragraph slider" 166px
+      "statistics slider" auto / 1fr 1fr;
+    gap: 0;
   }
 }
 
@@ -46,6 +47,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: title;
+    margin-bottom: 0;
   }
 }
 
@@ -60,7 +62,9 @@
 
   @media (min-width: $desktop-width) {
     grid-area: paragraph;
+    align-self: end;
     width: 436px;
+    margin-bottom: 0;
   }
 }
 
@@ -73,9 +77,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: statistics;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-area: statistics;
+    grid-template-rows: 72px;
+    grid-template-columns: 366px;
+    gap: 60px;
+    margin-top: 69px;
   }
 }
 
@@ -96,19 +103,20 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    display: flex;
     flex-flow: column wrap;
     text-align: end;
+    row-gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: start;
-    align-content: space-around;
-    flex-direction: row;
-    column-gap: 63px;
+    column-gap: 10px;
+    flex-flow: nowrap;
   }
 }
 
