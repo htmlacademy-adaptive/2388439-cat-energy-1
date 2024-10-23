@@ -48,6 +48,13 @@
   line-height: 18px;
 }
 
+@mixin form-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @mixin common-text-big {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -96,6 +103,13 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+}
+
+@mixin form-legend {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 @mixin product-info {

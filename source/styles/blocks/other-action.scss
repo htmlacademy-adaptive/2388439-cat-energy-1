@@ -27,6 +27,7 @@
 
 .other-action__text {
   @include other-action-text;
+  text-align: center;
   color: $base-white;
   margin: 0;
 
