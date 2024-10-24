@@ -51,10 +51,9 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    gap: 60px;
+    gap: 144px 60px;
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
-    column-gap: 80px;
     padding-bottom: 76px;
   }
 }
@@ -128,11 +127,16 @@
     top: 15px;
     right: 0;
     box-shadow: 100vw 0 0 0 $base-green;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     @include common-title;
     padding-left: 38px;
+    box-shadow: 0 0 0 0 $base-white, 40px 0 0 0 $base-white;
   }
 
   @media (min-width: $desktop-width) {
