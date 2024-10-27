@@ -91,6 +91,8 @@
 
 
 .main-nav__link--active {
+  pointer-events: none;
+
   @media (min-width: $tablet-width) {
     &::after {
       content: "";
