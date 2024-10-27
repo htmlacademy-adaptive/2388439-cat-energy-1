@@ -30,6 +30,14 @@
   mask-size: 27px 17px;
   mask-position: center;
   background-color: #666666;
+
+  &:hover {
+    background-color: $base-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--youtube {
@@ -40,6 +48,14 @@
   mask-size: 24px 18px;
   mask-position: center;
   background-color: #666666;
+
+  &:hover {
+    background-color: $base-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--tg {
@@ -50,4 +66,12 @@
   mask-repeat: no-repeat;
   mask-size: 20px 17px;
   mask-position: center;
+
+  &:hover {
+    background-color: $base-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

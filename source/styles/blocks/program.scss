@@ -183,7 +183,10 @@
     display: block;
     width: 32px;
     height: 10px;
-    background-image: url("../../icons/stack.svg#arrow");
+    background-image: url("../../icons/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: -8;
+    transition: background-position 0.3s;
     position: absolute;
     bottom: 3px;
     left: 90px;
@@ -191,5 +194,18 @@
     @media (min-width: $tablet-width) {
       line-height: 30px;
     }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:hover::before {
+    opacity: 0.8;
+    background-position: 0;
   }
 }

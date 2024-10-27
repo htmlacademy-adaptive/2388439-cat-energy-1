@@ -103,6 +103,15 @@
 }
 
 .promo__button {
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+
   @media (min-width: $tablet-width) {
     width: 244px;
     grid-column: 2 / 2;
@@ -116,12 +125,4 @@
     grid-column: 3 / 2;
     margin-top: 0;
   }
-}
-
-.promo__button:hover {
-  background-color: $dark-green;
-}
-
-.promo__button:active {
-  color: rgb(255, 255, 255, 0.3);
 }

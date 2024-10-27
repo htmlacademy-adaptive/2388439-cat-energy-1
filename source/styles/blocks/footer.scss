@@ -95,26 +95,45 @@
 
 .footer__dev {
   @include link-reset;
-
   display: flex;
   padding: 20px 0 40px;
-  justify-content: space-between;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     gap: 23px;
     padding: 0;
-  }
-
-  &:hover {
-    .footer__dev-img {
-      fill: $base-green;
-    }
   }
 }
 
 .footer__dev-name {
   margin: 0;
   color: $dark-gray;
+  display: flex;
+  gap: 23px;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/html-academy.svg");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    background-color: $dark-gray;
+  }
+
+  &:hover::after {
+    background-color: $base-green;
+  }
 }
 
 .footer__address-text span {
