@@ -10,14 +10,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-
-  &:hover {
-    background-color: $dark-green;
-  }
-
-  &:active {
-    color: rgb(255, 255, 255, 0.3);
-  }
 }
 
 .button--more {
@@ -37,6 +29,14 @@
 
 .button--other {
   grid-column: 1 / 3;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     width: 244px;

@@ -107,6 +107,14 @@
 .product__button {
   grid-column: 1 / 3;
   grid-row: 4 / 5;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 .product__more {

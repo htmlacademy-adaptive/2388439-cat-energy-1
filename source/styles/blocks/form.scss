@@ -75,6 +75,44 @@
   }
 }
 
+.form__module-legend {
+  @include form-legend;
+  text-transform: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include common-title;
+    text-transform: none;
+  }
+}
+
+.form__module-legend--contacts {
+  position: relative;
+  margin-bottom: 35px;
+  background-color: $base-white;
+  box-shadow: -20px 0 0 0 $base-white, 20px 0 0 0 $base-white;
+
+  &::after {
+    content: "";
+    background-color: $base-green;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 2px;
+    top: 15px;
+    right: 0;
+    box-shadow: 100vw 0 0 0 $base-green;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 76px;
+  }
+}
+
 .form__module--info {
   border: none;
   margin: 0;
@@ -113,6 +151,14 @@
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
+
+  &:hover {
+    border-color: $special-gray;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark-gray;
+  }
 
   @media (min-width: $tablet-width) {
     @include common-text-big;
@@ -156,33 +202,6 @@
 .form__contacts-container {
   display: grid;
   row-gap: 35px;
-}
-
-.form__module-legend--contacts {
-  position: relative;
-  padding-bottom: 35px;
-  background-color: $base-white;
-  box-shadow: -20px 0 0 0 $base-white, 20px 0 0 0 $base-white;
-
-  &::after {
-    content: "";
-    background-color: $base-green;
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 2px;
-    top: 15px;
-    right: 0;
-    box-shadow: 100vw 0 0 0 $base-green;
-
-    @media (min-width: $tablet-width) {
-      top: 25px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 76px;
-  }
 }
 
 .form__module-legend--contacts br {
@@ -256,6 +275,10 @@
   align-self: center;
   padding-inline: 15px 0;
   padding-block: 0;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .form__checkbox-label {
@@ -312,17 +335,6 @@
   }
 }
 
-.form__module-legend {
-  @include form-legend;
-  text-transform: none;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    @include common-title;
-    text-transform: none;
-  }
-}
-
 .form__comment-label {
   @include form-legend;
   text-transform: none;
@@ -373,6 +385,18 @@
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
+
+  &:hover {
+    border-color: $special-gray;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark-gray;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid $focus-invalid;
+  }
 
   &[type="email"] {
     background-image: url("../../icons/icon-email.svg");
@@ -543,5 +567,9 @@
     background-color: $base-green;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
