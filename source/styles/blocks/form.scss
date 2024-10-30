@@ -398,20 +398,6 @@
     outline: 2px solid $focus-invalid;
   }
 
-  &[type="email"] {
-    background-image: url("../../icons/icon-email.svg");
-    background-size: 17px 13px;
-    background-repeat: no-repeat;
-    background-position: right 13px top 16px;
-  }
-
-  &[type="tel"] {
-    background-image: url("../../icons/icon-phone.svg");
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: right 13px top 16px;
-  }
-
   @media (min-width: $tablet-width) {
     @include common-text-big;
   }
@@ -546,6 +532,13 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 52px;
+  }
+}
+
+.form__module-list--contacts {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
   }
 }
 
