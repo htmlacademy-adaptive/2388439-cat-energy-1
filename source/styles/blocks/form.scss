@@ -101,17 +101,6 @@
   }
 }
 
-
-.form__module-list {
-  @include list-reset;
-  display: grid;
-  row-gap: 13px;
-
-  @media (min-width: $tablet-width) {
-    row-gap: 18px;
-  }
-}
-
 .form__module-legend {
   @include form-legend;
   text-transform: none;
@@ -314,12 +303,12 @@
   align-self: center;
   padding-inline: 15px 0;
   padding-block: 0;
-} 
-
-.form__radio-input:disabled + .form__radio-label {
-  opacity: 0.3;
-  pointer-events: none;
 }
+
+// .form__radio-input:disabled+.form__radio-label {
+//   opacity: 0.3;
+//   pointer-events: none;
+// }
 
 .form__comment-input {
   @include form-common-text;
@@ -399,7 +388,7 @@
   margin: 0;
   position: relative;
 
-  &:has(.form__field-input[type="email"])::before {
+  &:has([type="email"])::before {
     content: "";
     position: absolute;
     right: 12px;
@@ -410,7 +399,7 @@
     background-color: #000000;
   }
 
-  &:has(.form__field-input[type="tel"])::before {
+  &:has([type="tel"])::before {
     content: "";
     position: absolute;
     right: 12px;
@@ -420,18 +409,21 @@
     mask-image: url("../../icons/icon-phone.svg");
     background-color: #000000;
   }
-  
+
   @media (min-width: $tablet-width) {
     @include common-text-big;
   }
 }
 
-.form__field-label
-.form__field-input {
+.form__field-label:has([type="email"]:user-invalid)::before {
+  background-color: $focus-invalid;
+}
+
+.form__field-label .form__field-input {
   &::placeholder {
     @include form-common-text;
     color: $dark-gray;
-  
+
     @media (min-width: $tablet-width) {
       @include common-text-big;
     }
@@ -448,11 +440,7 @@
     border-color: $special-gray;
   }
 
-  &:focus-visible {
-    outline: 2px solid $dark-gray;
-  }
-
-  &:focus:invalid {
+  &:user-invalid {
     outline: 2px solid $focus-invalid;
   }
 
@@ -460,19 +448,6 @@
     @include common-text-big;
   }
 }
-
-// .form__module-icon {
-//   position: absolute;
-//   right: 12px;
-
-//   @media (min-width: $tablet-width) {
-//     right: 14px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     right: 16px;
-//   }
-// }
 
 .form__module--extra {
   border: none;
@@ -559,13 +534,13 @@
   align-self: center;
   padding-inline: 15px 0;
   padding-block: 0;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.form__checkbox-input:disabled + .form__checkbox-label {
-    opacity: 0.3;
-    pointer-events: none;
-}
+// .form__checkbox-input:disabled+.form__checkbox-label {
+//   opacity: 0.3;
+//   pointer-events: none;
+// }
 
 .form__submit-note {
   font-family: "Lato", sans-serif;
@@ -631,4 +606,3 @@
     gap: 80px;
   }
 }
-
