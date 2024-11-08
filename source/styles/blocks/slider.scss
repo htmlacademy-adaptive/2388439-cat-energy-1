@@ -4,7 +4,90 @@
 }
 
 .slider {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  max-width: 560px;
+  height: auto;
+  margin-block: 0;
+  margin-inline: auto;
+  padding: 0;
+  position: relative;
+
   @media (min-width: $desktop-width) {
     grid-area: slider;
   }
+}
+
+.slider picture {
+  display: contents;
+}
+
+.slider__image {
+  grid-area: 1 / 1 / auto / -1;
+  height: 100%;
+  display: block;
+}
+
+.slider__pull-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.slider__pull {
+  background-color: $medium-gray;
+  cursor: ew-resize;
+  border: none;
+  border-radius: 4px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $medium-gray;
+    border-radius: 50%;
+    background-color: $base-white;
+    position: absolute;
+    top: 108px;
+    left: -18px;
+
+    @media (min-width: $tablet-width) {
+      top: 230px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 18px;
+    mask: url("../../icons/icon-pull-bg.svg");
+    background-color: $medium-gray;
+    position: absolute;
+    top: 119px;
+    left: -10px;
+
+    @media (min-width: $tablet-width) {
+      top: 241px;
+    }
+  }
+}
+
+.slider__image--befor {
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider__image--after {
+  clip-path: inset(0 0 0 50%);
 }
