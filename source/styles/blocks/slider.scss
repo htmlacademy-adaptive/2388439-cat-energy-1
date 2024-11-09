@@ -49,7 +49,16 @@
   bottom: 0;
   position: absolute;
   z-index: 1;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $base-green;
+  }
+
+  &:active {
+    background-color:$dark-green;
+    opacity: 0.6;
+  }
 
   &::before {
     content: "";
@@ -62,10 +71,20 @@
     position: absolute;
     top: 108px;
     left: -18px;
+    transition: border-color 0.3s;
 
     @media (min-width: $tablet-width) {
       top: 230px;
     }
+  }
+
+  &:hover:before {
+    border-color: $base-green;
+  }
+
+  &:active:before {
+    opacity: 0,6;
+    border-color:$dark-green;
   }
 
   &::after {
@@ -77,12 +96,23 @@
     position: absolute;
     top: 119px;
     left: -10px;
+    transition: background-color 0.3s;
 
     @media (min-width: $tablet-width) {
       top: 241px;
     }
   }
+
+  &:hover:after {
+    background-color: $base-green;
+  }
+
+  &:active:after {
+    opacity: 0,6;
+    background-color:$dark-green;
+  }
 }
+
 
 .slider__image--befor {
   clip-path: inset(0 50% 0 0);
