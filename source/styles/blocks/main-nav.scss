@@ -67,10 +67,15 @@
 
 .main-nav--is-open .main-nav__wrapper {
   position: absolute;
-  top: 71px;
+  top: 70px;
   left: -20px;
   width: calc(100% + 40px);
   background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    background-color: transparent;
+  }
 }
 
 .main-nav--is-close .main-nav__list {

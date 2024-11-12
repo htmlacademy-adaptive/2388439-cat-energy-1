@@ -17,6 +17,10 @@
   }
 }
 
+.social__item {
+  display: flex;
+}
+
 .social__link {
   @include link-reset;
   color: $base-black;

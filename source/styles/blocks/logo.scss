@@ -5,7 +5,6 @@
   display: flex;
   gap: 14px;
   align-items: center;
-  //position: relative;
 
   &:hover {
     opacity: 0.8;
@@ -22,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    flex-grow: 0;
   }
 }
 
@@ -43,5 +43,27 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
+  }
+}
+
+.logo__image-footer {
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+  }
+}
+
+.footer__logo {
+  padding-block: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+a:has(.logo__image-title) {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
