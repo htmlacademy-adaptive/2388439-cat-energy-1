@@ -1,6 +1,6 @@
 .main-nav {
   background-color: $base-white;
-  position: relative;
+  display: flex;
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
@@ -59,11 +59,15 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
 }
 
 .main-nav--is-open .main-nav__wrapper {
   position: absolute;
-  top: 14px;
+  top: 71px;
   left: -20px;
   width: calc(100% + 40px);
   background-color: $base-white;
@@ -137,14 +141,13 @@
 }
 
 .main-nav--is-open .btn-burger {
-  position: absolute;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 19px;
-    right: 7px;
+    top: 17px;
+    right: 4px;
     width: 24px;
     height: 2px;
     background-color: #000000;

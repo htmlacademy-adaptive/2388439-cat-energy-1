@@ -1,7 +1,5 @@
 .promo {
-  background-image:
-    linear-gradient(to top, #ffffff 216px, rgba(104, 183, 56, 0.85) 200px),
-    image-set(url("../../images/index-background-mobile@1x.png") type("image/png") 1x, url("../../images/index-background-mobile@2x.png") type("image/png") 2x, url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x, url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x);
+  background-image: linear-gradient(to top, #ffffff 216px, rgba(104, 183, 56, 0.85) 200px), image-set(url("../../images/index-background-mobile@1x.png") type("image/png") 1x, url("../../images/index-background-mobile@2x.png") type("image/png") 2x, url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x, url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x);
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 27px;

@@ -2,7 +2,10 @@
   text-decoration: none;
   min-height: 38px;
   box-sizing: content-box;
-  position: relative;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  //position: relative;
 
   &:hover {
     opacity: 0.8;
@@ -10,6 +13,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
   }
 
 
@@ -20,9 +27,7 @@
 
 .logo__image-title {
   display: block;
-  position: absolute;
-  left: 90px;
-  bottom: 14px;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     display: none;

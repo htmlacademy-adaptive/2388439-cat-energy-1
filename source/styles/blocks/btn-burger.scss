@@ -1,11 +1,10 @@
 .btn-burger {
-  padding: 20px;
-  position: absolute;
-  bottom: 4px;
-  right: 3px;
-  z-index: 4;
   background-color: transparent;
   border: none;
+  width: 33px;
+  height: 38px;
+  padding: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: none;

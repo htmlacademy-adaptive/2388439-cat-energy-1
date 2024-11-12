@@ -56,7 +56,7 @@
   }
 
   &:active {
-    background-color:$dark-green;
+    background-color: $dark-green;
     opacity: 0.6;
   }
 
@@ -78,13 +78,13 @@
     }
   }
 
-  &:hover:before {
+  &:hover::before {
     border-color: $base-green;
   }
 
-  &:active:before {
-    opacity: 0,6;
-    border-color:$dark-green;
+  &:active::before {
+    opacity: 0.6;
+    border-color: $dark-green;
   }
 
   &::after {
@@ -103,13 +103,13 @@
     }
   }
 
-  &:hover:after {
+  &:hover::after {
     background-color: $base-green;
   }
 
-  &:active:after {
-    opacity: 0,6;
-    background-color:$dark-green;
+  &:active::after {
+    opacity: 0, 6;
+    background-color: $dark-green;
   }
 }
 

@@ -185,7 +185,7 @@
     height: 10px;
     background-image: url("../../icons/icon-arrow.svg");
     background-repeat: no-repeat;
-    background-position: -8;
+    background-position: -3;
     transition: background-position 0.3s;
     position: absolute;
     bottom: 3px;
@@ -201,6 +201,10 @@
   }
 
   &:hover::before {
+    background-position: 0;
+  }
+
+  &:focus-visible::before {
     background-position: 0;
   }
 }

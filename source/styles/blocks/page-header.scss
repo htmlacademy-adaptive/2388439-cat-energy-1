@@ -1,5 +1,14 @@
+.page-header {
+  padding-block: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .page-header__logo {
   right: 120px;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -9,11 +18,12 @@
 }
 
 .page-header__container {
-  padding-block: 14px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 13px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
     padding-block: 25px;
   }

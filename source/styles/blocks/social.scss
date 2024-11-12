@@ -20,58 +20,42 @@
 .social__link {
   @include link-reset;
   color: $base-black;
+  width: 28px;
+  height: 28px;
+
+  &:hover {
+    background-color: $base-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    background-color: $base-green;
+  }
 }
 
 .social__link--vk {
-  width: 28px;
-  height: 28px;
   mask-image: url("../../icons/icon-vk.svg");
   mask-repeat: no-repeat;
   mask-size: 27px 17px;
   mask-position: center;
   background-color: #666666;
-
-  &:hover {
-    background-color: $base-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .social__link--youtube {
-  width: 28px;
-  height: 28px;
   mask-image: url("../../icons/icon-yt.svg");
   mask-repeat: no-repeat;
   mask-size: 24px 18px;
   mask-position: center;
   background-color: #666666;
-
-  &:hover {
-    background-color: $base-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .social__link--tg {
-  width: 28px;
-  height: 28px;
   mask-image: url("../../icons/icon-tg.svg");
-  background-color: #666666;
   mask-repeat: no-repeat;
   mask-size: 20px 17px;
   mask-position: center;
-
-  &:hover {
-    background-color: $base-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  background-color: #666666;
 }
