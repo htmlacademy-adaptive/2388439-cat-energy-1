@@ -43,7 +43,7 @@
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  padding: 26px 0;
+  padding-block: 26px 27px;
   width: 280px;
   min-width: max-content;
   text-align: left;
@@ -68,13 +68,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  width: 155px;
+  width: 126px;
   text-transform: uppercase;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 155px;
   }
 }
 

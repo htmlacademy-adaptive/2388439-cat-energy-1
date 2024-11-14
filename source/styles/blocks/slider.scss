@@ -9,9 +9,13 @@
   place-items: center;
   max-width: 560px;
   height: auto;
-  margin-block: 52px;
+  margin-block: -2px;
   margin-inline: auto;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-block: 52px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-area: slider;
