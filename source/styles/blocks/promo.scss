@@ -49,7 +49,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 120px 1fr 56px;
     grid-template-rows: repeat(3, auto);
     gap: 0;
     position: relative;
@@ -81,7 +80,9 @@
     text-align: left;
     color: #000000;
     grid-column: 2 / 4;
-    margin-bottom: 40px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,7 +106,8 @@
     color: #000000;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    margin-bottom: 50px;
+    margin-left: 90px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,6 +123,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    margin-top: -20px;
     grid-column: 2 / 3;
     grid-row: 3 / 5;
   }
@@ -143,12 +146,13 @@
 
 
   @media (min-width: $tablet-width) {
+    @include form-button;
     width: 244px;
     grid-column: 2 / 2;
     grid-row: 3 / 4;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-block: 14px;
     margin-top: 10px;
+    margin-left: 90px;
   }
 
   @media (min-width: $desktop-width) {

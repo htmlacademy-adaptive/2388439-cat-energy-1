@@ -1,5 +1,9 @@
 .main {
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+  }
 }
 
 .main__form-container {
