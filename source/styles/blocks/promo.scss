@@ -1,6 +1,10 @@
 .promo {
   padding-block: 27px 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-block: 27px 0;
+  }
+
   &::before {
     content: "";
     display: block;
