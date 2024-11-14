@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient($base-white 619px, $sample-gray 462px);
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,8 +21,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 101px;
-    gap: 55px;
+    padding-bottom: 48px;
+    gap: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,7 +148,7 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     height: 77px;
-    gap: 16px;
+    gap: 13px;
   }
 }
 

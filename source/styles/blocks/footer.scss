@@ -49,9 +49,9 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding-block: 60px 61px;
     justify-content: space-between;
-    column-gap: 274px;
+    column-gap: 317px;
     margin: auto;
   }
 
@@ -68,7 +68,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  width: 140px;
+  width: 155px;
   text-transform: uppercase;
   margin: 0;
 
@@ -88,6 +88,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    text-align: right;
   }
 }
 
@@ -114,6 +115,10 @@
   display: flex;
   gap: 140px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 22px;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -142,7 +147,7 @@
 .footer__address-text span {
   @media (min-width: $tablet-width) {
     display: block;
-    margin-top: 22px;
+    margin-top: 19px;
   }
 }
 

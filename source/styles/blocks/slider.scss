@@ -9,9 +9,8 @@
   place-items: center;
   max-width: 560px;
   height: auto;
-  margin-block: 0;
+  margin-block: 52px;
   margin-inline: auto;
-  padding: 0;
   position: relative;
 
   @media (min-width: $desktop-width) {
@@ -74,7 +73,7 @@
     transition: border-color 0.3s;
 
     @media (min-width: $tablet-width) {
-      top: 230px;
+      top: 236px;
     }
   }
 
@@ -99,7 +98,7 @@
     transition: background-color 0.3s;
 
     @media (min-width: $tablet-width) {
-      top: 241px;
+      top: 246px;
     }
   }
 

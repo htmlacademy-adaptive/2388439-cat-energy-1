@@ -1,3 +1,9 @@
+.social {
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+  }
+}
+
 .social__list {
   @include list-reset;
   display: grid;
