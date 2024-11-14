@@ -295,6 +295,10 @@
   border: 1px solid $special-gray;
   border-radius: 50%;
 
+  &:hover {
+    border-color: $hover-light-gray;
+  }
+
   &[type="radio"]:checked::after {
     content: "";
     position: absolute;
