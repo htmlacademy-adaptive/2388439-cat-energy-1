@@ -47,18 +47,12 @@
 }
 
 .logo__image-footer {
+  width: 128px;
+  height: 24px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     flex-grow: 0;
-  }
-}
-
-.footer__logo {
-  padding-block: 40px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
   }
 }
 

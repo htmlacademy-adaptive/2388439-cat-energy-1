@@ -8,7 +8,7 @@
     height: 302px;
     background-image: linear-gradient(to right top, #525257, #403f44);
     position: absolute;
-    top: 71px;
+    top: 64px;
     z-index: -2;
 
     @media (min-width: $tablet-width) {
@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: absolute;
-    top: 71px;
+    top: 64px;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
@@ -42,15 +42,10 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 266px;
   }
-
-  // background-image: linear-gradient(to top, #ffffff 216px, rgba(104, 183, 56, 0.85) 200px), image-set(url("../../images/index-background-mobile@1x.png") type("image/png") 1x, url("../../images/index-background-mobile@2x.png") type("image/png") 2x, url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x, url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x);
-  // background-repeat: no-repeat;
-  // background-position: top center;
 }
 
 .promo__container {
   display: grid;
-  gap: 25px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -78,6 +73,7 @@
   @include common-title;
   color: $base-white;
   margin: 0;
+  padding-block: 7px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -100,6 +96,7 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
+  padding-block: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -120,7 +117,7 @@
 .promo__content-image {
   display: block;
   margin: auto;
-  padding-top: 14px;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;

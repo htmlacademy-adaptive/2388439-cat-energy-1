@@ -15,7 +15,7 @@
 .sample__container {
   display: grid;
   gap: 20px;
-  padding: 25px 0 40px;
+  padding: 28px 0 40px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
@@ -89,6 +89,7 @@
 .sample__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
   margin: 0;
 
   @media (min-width: $tablet-width) {

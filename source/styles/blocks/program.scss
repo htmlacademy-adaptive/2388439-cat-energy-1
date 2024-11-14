@@ -16,7 +16,7 @@
   @include list-reset;
   text-align: center;
   display: grid;
-  gap: 20px;
+  gap: 18px;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
@@ -109,8 +109,8 @@
     background-image: url("../../images/program-pro-cat.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 35px;
-    right: 206px;
+    top: 36px;
+    right: 201px;
 
     @media (min-width: $tablet-width) {
       width: 268px;
@@ -176,7 +176,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $base-black;
-  margin-top: 15px;
+  margin-top: 19px;
 
   &::before {
     content: "";
@@ -189,7 +189,7 @@
     transition: background-position 0.3s;
     position: absolute;
     bottom: 3px;
-    left: 90px;
+    left: 100px;
 
     @media (min-width: $tablet-width) {
       line-height: 30px;

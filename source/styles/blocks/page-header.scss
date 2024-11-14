@@ -1,5 +1,5 @@
 .page-header {
-  padding-block: 14px;
+  padding-block: 13px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -20,7 +20,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 13px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;

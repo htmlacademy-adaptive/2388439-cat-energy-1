@@ -44,8 +44,8 @@
   @include link-reset;
   color: $base-black;
   text-transform: uppercase;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding-block: 23px;
+  padding-inline: 20px 0;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
@@ -67,9 +67,9 @@
 
 .main-nav--is-open .main-nav__wrapper {
   position: absolute;
-  top: 70px;
+  top: 62px;
   left: -20px;
-  width: calc(100% + 40px);
+  width: calc(100% + 20px);
   background-color: $base-white;
 
   @media (min-width: $tablet-width) {
@@ -137,7 +137,7 @@
   content: "";
   position: absolute;
   display: block;
-  top: 10px;
+  top: 6px;
   left: 8px;
   width: 24px;
   height: 2px;
@@ -151,8 +151,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 17px;
-    right: 4px;
+    top: 15px;
+    right: -3px;
     width: 24px;
     height: 2px;
     background-color: #000000;

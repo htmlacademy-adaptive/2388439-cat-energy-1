@@ -14,7 +14,7 @@
 .advantages__container {
   display: grid;
   text-align: left;
-  row-gap: 40px;
+  row-gap: 42px;
 
   @media (min-width: $tablet-width) {
     row-gap: 32px;
@@ -61,7 +61,7 @@
   @include list-reset;
   @include common-text;
   display: grid;
-  row-gap: 24px;
+  row-gap: 26px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;

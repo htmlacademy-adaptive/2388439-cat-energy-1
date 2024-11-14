@@ -5,6 +5,11 @@
 
 .footer__logo {
   text-align: center;
+  padding-block: 32px 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -93,7 +98,7 @@
 .footer__dev {
   @include link-reset;
   display: flex;
-  padding: 20px 0 40px;
+  padding: 0 0 40px;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
@@ -103,10 +108,11 @@
 }
 
 .footer__dev-name {
+  @include other-action-text;
   margin: 0;
   color: $dark-gray;
   display: flex;
-  gap: 23px;
+  gap: 140px;
   align-items: center;
 
   &:hover {
