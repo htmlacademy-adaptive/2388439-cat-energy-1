@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 75px;
+    padding: 0 0 25px;
     background-image: linear-gradient($base-white 147px, $sample-gray 147px);
   }
 }
@@ -29,7 +29,7 @@
     grid-template:
       "title slider" 147px
       "paragraph slider" 166px
-      "statistics slider" auto / 1fr 1fr;
+      "statistics slider" auto / 1fr;
     gap: 0;
   }
 }
@@ -48,7 +48,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: title;
-    margin-bottom: 0;
+    margin: 10px 0 0;
   }
 }
 
@@ -66,6 +66,14 @@
     align-self: end;
     width: 436px;
     margin-bottom: 0;
+  }
+}
+
+.sample__text br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 
@@ -117,8 +125,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 10px;
+    column-gap: 67px;
     flex-flow: nowrap;
+    justify-content: flex-start;
   }
 }
 
@@ -149,6 +158,11 @@
     width: 162px;
     height: 77px;
     gap: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 11px;
+    height: 75px;
   }
 }
 
