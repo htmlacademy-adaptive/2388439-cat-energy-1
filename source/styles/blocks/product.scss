@@ -11,9 +11,10 @@
 .product__container {
   width: 280px;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 19px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: 172px auto auto 1fr;
@@ -167,7 +168,7 @@
   background-image: url("../../icons/plus.svg");
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  background-position: 50% 10%;
+  background-position: 50% 14%;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;

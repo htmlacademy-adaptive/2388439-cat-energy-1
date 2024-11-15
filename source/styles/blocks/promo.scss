@@ -76,7 +76,7 @@
   @include common-title;
   color: $base-white;
   margin: 0;
-  padding-block: 7px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -86,7 +86,6 @@
     grid-column: 2 / 4;
     margin-left: 90px;
     margin-bottom: 20px;
-    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +101,7 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  padding-block: 21px;
+  padding-block: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
