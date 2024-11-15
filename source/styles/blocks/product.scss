@@ -128,7 +128,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-rows: 1fr 1fr 40px;
+    grid-template-rows: auto auto 40px;
     row-gap: 0;
     padding-inline: 15px;
   }
@@ -143,7 +143,7 @@
   @media (min-width: $tablet-width) {
     @include product-title-tablet;
     padding-inline: 50px;
-    padding-block-end: 23px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,6 +160,7 @@
   @media (min-width: $tablet-width) {
     @include product-info-tablet;
     padding-inline: 12px;
+    padding-bottom: 82px;
   }
 }
 
@@ -177,6 +178,6 @@
     border-bottom: none;
     box-shadow: inset 0 0 0 1px $basic-grey;
     background-size: 60px 60px;
-    padding-top: 163px;
+    padding-block: 162px 0;
   }
 }
