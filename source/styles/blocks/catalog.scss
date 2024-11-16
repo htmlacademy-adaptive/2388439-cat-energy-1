@@ -24,7 +24,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1280px;
+    width: 1220px;
+    padding-top: 62px;
   }
 }
 
@@ -53,7 +54,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    gap: 144px 60px;
+    gap: 144px 80px;
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
     padding-bottom: 76px;
