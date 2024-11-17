@@ -51,6 +51,6 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    grid-area: 1 / 4;
+    grid-area: 1 / 3 / auto / -1;
   }
 }

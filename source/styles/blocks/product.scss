@@ -28,7 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-rows: 152px auto auto 1fr;
+    grid-template-rows: 142px auto auto 1fr;
     width: auto;
     padding-inline: 37px;
   }
@@ -68,6 +68,7 @@
 
   @media (min-width: $desktop-width) {
     padding-inline: 20px;
+    padding-top: 11px;
   }
 }
 
@@ -101,7 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-block-end: 37px;
+    padding-block-end: 33px;
     row-gap: 8px;
   }
 }
@@ -123,7 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 6px;
+    padding-bottom: 9px;
   }
 }
 
