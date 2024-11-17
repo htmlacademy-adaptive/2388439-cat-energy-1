@@ -196,9 +196,9 @@
 
 .catalog__item--other {
   display: grid;
-  row-gap: 11px;
+  row-gap: 12px;
   align-items: center;
-  padding: 13px 0 19px;
+  padding: 12px 0 20px;
   box-shadow: 0 -1px 0 0 $special-gray;
 
   @media (min-width: $tablet-width) {
