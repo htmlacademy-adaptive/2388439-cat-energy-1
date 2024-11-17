@@ -22,9 +22,11 @@
 
   @media (min-width: $desktop-width) {
     background-position: 0 0, calc(100% - 2px);
-    column-gap: 0;
+    gap: 0 40px;
     flex-direction: column;
     grid-column: 2 / 3;
+    padding-left: 0;
+    padding-top: 60px;
   }
 }
 
