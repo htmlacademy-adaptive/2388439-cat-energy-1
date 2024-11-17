@@ -97,7 +97,7 @@
   row-gap: 13px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 18px;
+    row-gap: 17px;
   }
 }
 
@@ -119,7 +119,7 @@
 
   @media (min-width: $tablet-width) {
     @include common-text-big;
-    padding: 11px 20px;
+    padding: 11px 18px;
   }
 }
 
@@ -207,7 +207,7 @@
   @media (min-width: $tablet-width) {
     box-shadow: 0 0 0 1px $very-light-gray;
     padding-inline: 27px;
-    padding-block: 23px 27px;
+    padding-block: 23px 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -289,8 +289,8 @@
 
 .form__radio-input {
   margin: 0;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   appearance: none;
   border: 1px solid $special-gray;
   border-radius: 50%;
@@ -302,10 +302,10 @@
   &[type="radio"]:checked::after {
     content: "";
     position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 13px;
-    height: 13px;
+    top: 20px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
     background-color: $base-green;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -321,6 +321,10 @@
   align-self: center;
   padding-inline: 15px 0;
   padding-block: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-inline-start: 20px;
+  }
 }
 
 .form__radio-input:disabled+.form__radio-label {

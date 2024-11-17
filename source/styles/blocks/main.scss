@@ -14,7 +14,7 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
-    padding-inline: 70px;
+    padding-inline: 40px;
     grid-template-columns: 1fr 1fr;
   }
 
