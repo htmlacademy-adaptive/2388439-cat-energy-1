@@ -119,6 +119,11 @@
   @media (min-width: $tablet-width) {
     row-gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .form__text-input {
@@ -344,7 +349,7 @@
       width: 18px;
       height: 18px;
       top: 20px;
-    left: 20px;
+      left: 20px;
     }
   }
 
@@ -493,7 +498,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: 16px;;
+      right: 16px;
     }
   }
 
@@ -724,12 +729,5 @@
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 60px;
     column-gap: 78px;
-  }
-}
-
-.form__module-list--contacts {
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
   }
 }
