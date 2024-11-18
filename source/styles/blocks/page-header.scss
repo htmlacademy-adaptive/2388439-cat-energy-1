@@ -23,11 +23,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding-block: 17px;
+    padding-block: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-block: 48px 0;
+    padding-block: 48px 62px;
   }
 }
 
