@@ -3,6 +3,7 @@
   display: flex;
 
   @media (min-width: $desktop-width) {
+    max-width: 50%;
     background-color: transparent;
   }
 }
@@ -15,16 +16,12 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    column-gap: 15px;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 21px;
+    //column-gap: 21px;
   }
 }
 
@@ -52,13 +49,13 @@
   padding-inline: 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding-inline: 13px 6px;
+    padding-inline: 6px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-inline: 13px 0;
+    padding-inline: 2px;
   }
 
   &:hover {
@@ -93,20 +90,43 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 29px;
+  }
+}
+
+.main-nav--is-open .main-nav__list {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 29px;
   }
 }
 
 //Отработка меню при отключенном JS
 
 .main-nav--nojs .btn-burger {
-  display: none;
+  &::before,
+  &::after{
+    display: none;
+  }
 }
 
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-  min-height: 0;
-}
 
+.main-nav--nojs {
+  .main-nav__wrapper {
+    display: block;
+  }
+
+}
 
 .main-nav__link--active {
   pointer-events: none;
