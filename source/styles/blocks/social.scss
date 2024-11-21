@@ -1,71 +1,79 @@
-.social {
-  @media (min-width: $tablet-width) {
-    padding-left: 36px;
-  }
-}
-
 .social__list {
   @include list-reset;
   display: grid;
-  grid-template-columns: repeat(3, 28px);
+  gap: 12px;
+  grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  padding: 17px;
-  margin-bottom: 20px;
   border-top: 1px solid $light-special-gray;
   border-bottom: 1px solid $light-special-gray;
+  padding-block: 12px 9px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
     border: none;
-    padding: 0;
+    padding-block: 0;
+    padding-inline: 37px 0;
   }
 }
 
 .social__item {
-  display: flex;
+  width: 40px;
+  height: 40px;
 }
 
 .social__link {
   @include link-reset;
   color: $base-black;
-  width: 28px;
-  height: 28px;
 
-  &:hover {
+  &:hover::after,
+  &:focus::after {
     background-color: $base-green;
   }
 
-  &:active {
+  &:active::after {
     opacity: 0.3;
   }
 
-  &:focus-visible {
-    background-color: $base-green;
-  }
 }
 
 .social__link--vk {
-  mask-image: url("../../icons/icon-vk.svg");
-  mask-repeat: no-repeat;
-  mask-size: 27px 17px;
-  mask-position: center;
-  background-color: #666666;
+  &::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    mask-image: url("../../icons/icon-vk.svg");
+    mask-repeat: no-repeat;
+    mask-size: 27px 17px;
+    mask-position: center;
+    background-color: #666666;
+  }
 }
 
 .social__link--youtube {
-  mask-image: url("../../icons/icon-yt.svg");
-  mask-repeat: no-repeat;
-  mask-size: 24px 18px;
-  mask-position: center;
-  background-color: #666666;
+    &::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    mask-image: url("../../icons/icon-yt.svg");
+    mask-repeat: no-repeat;
+    mask-size: 27px 17px;
+    mask-position: center;
+    background-color: #666666;
+  }
 }
 
 .social__link--tg {
-  mask-image: url("../../icons/icon-tg.svg");
-  mask-repeat: no-repeat;
-  mask-size: 20px 17px;
-  mask-position: center;
-  background-color: #666666;
+ &::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    mask-image: url("../../icons/icon-tg.svg");
+    mask-repeat: no-repeat;
+    mask-size: 27px 17px;
+    mask-position: center;
+    background-color: #666666;
+  }
 }

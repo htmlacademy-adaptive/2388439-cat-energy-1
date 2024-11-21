@@ -110,12 +110,13 @@
 .footer__dev {
   @include link-reset;
   display: flex;
-  padding: 0 0 40px;
+  margin: 20px 0 40px;
+  padding: 0;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
     gap: 23px;
-    padding: 0;
+    margin: 0;
   }
 }
 
