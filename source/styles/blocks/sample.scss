@@ -16,7 +16,7 @@
 .sample__container {
   display: grid;
   gap: 20px;
-  padding: 28px 0 42px;
+  padding: 25px 0 42px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
@@ -58,7 +58,7 @@
 
   @media (min-width: $tablet-width) {
     @include common-text-tablet;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +79,7 @@
 
 .sample__wrapper {
   display: grid;
-  gap: 35px;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -121,7 +121,9 @@
     font-size: 20px;
     flex-flow: column wrap;
     text-align: end;
+    justify-content: flex-start;
     row-gap: 10px;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -133,11 +135,14 @@
 
 .sample__value {
   text-transform: uppercase;
-  margin: 15px 0 0;
+  margin: 0;
+  padding-block: 16px;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
   grid-row-start: 1;
+  box-shadow: 0 0 0 1px $special-gray;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -146,36 +151,32 @@
 }
 
 .sample__item {
-  border: 1px solid $special-gray;
-  border-radius: 3px;
-  width: 122px;
-  height: 56px;
   display: grid;
-  gap: 8px;
-  justify-content: center;
+  gap: 3px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    height: 77px;
-    gap: 13px;
+    gap: 7px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     gap: 11px;
-    height: 75px;
   }
 }
 
 .sample__description {
   @include common-text;
-  background-color: $sample-gray;
   font-size: 12px;
   line-height: 12px;
-  width: 77px;
-  height: 24px;
   text-align: center;
   text-transform: lowercase;
+  width: 77px;
+  min-height: 24px;
   overflow: hidden;
+  justify-self: center;
+  margin-top: -12px;
+  background-color: $sample-gray;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     background-color: $base-white;
