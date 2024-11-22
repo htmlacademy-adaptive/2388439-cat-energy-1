@@ -1,32 +1,21 @@
 .promo {
-  padding-block: 27px 20px;
+  padding-block: 0 20px;
+  position: relative;
 
   &::before {
     content: "";
     display: block;
     width: 100%;
     height: 302px;
-    background-image: linear-gradient(to right top, #525257, #403f44);
-    position: absolute;
-    top: 64px;
-    z-index: -2;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 302px;
-    background-image: linear-gradient(hsla(97, 53%, 47%, 0.8) 100%, #68b738), image-set(url("../../images/index-background-mobile@1x.png") type("image/png") 1x, url("../../images/index-background-mobile@2x.png") type("image/png") 2x, url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x, url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x);
-
+    background-image: linear-gradient(hsla(97, 53%, 47%, 0.8) 100%, #68b738), 
+    image-set(url("../../images/index-background-mobile@1x.png") type("image/png") 1x, 
+    url("../../images/index-background-mobile@2x.png") type("image/png") 2x, 
+    url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x, 
+    url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x), 
+    linear-gradient(to right top, #525257, #403f44);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     position: absolute;
-    top: 64px;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
@@ -65,14 +54,17 @@
 .promo__container picture {
   @media (min-width: $tablet-width) {
     display: contents;
+    z-index: 1;
   }
 }
 
 .promo__title {
   @include common-title;
   color: $base-white;
-  margin: 0;
+  margin-inline: 0;
+  margin-block: 27px 0;
   padding: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -99,6 +91,7 @@
   text-transform: uppercase;
   margin: 0;
   padding-block: 25px 17px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
