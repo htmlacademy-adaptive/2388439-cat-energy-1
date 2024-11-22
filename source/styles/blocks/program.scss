@@ -17,7 +17,7 @@
   @include list-reset;
   text-align: center;
   display: grid;
-  gap: 18px;
+  gap: 23px;
 
   @media (min-width: $tablet-width) {
     gap: 33px;
@@ -176,12 +176,14 @@
 
 .program__link {
   @include link-reset;
-  position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $base-black;
+  display: flex;
+  align-items: center;
+  gap: 18px;
   margin-top: 19px;
 
   @media (min-width: $tablet-width) {
@@ -189,23 +191,20 @@
     margin-top: 14px;
   }
 
-  &::before {
+  &::after {
     content: "";
     display: block;
-    width: 32px;
+    width: 28px;
     height: 10px;
     background-image: url("../../icons/icon-arrow.svg");
     background-repeat: no-repeat;
-    background-position: -3;
+    background-size: contain;
+    background-position: -8;
     transition: background-position 0.3s;
-    position: absolute;
-    bottom: 3px;
-    left: 100px;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
       line-height: 30px;
-      bottom: 11px;
-      left: 129px;
     }
   }
 
@@ -213,11 +212,11 @@
     opacity: 0.6;
   }
 
-  &:hover::before {
+  &:hover::after {
     background-position: 0;
   }
 
-  &:focus-visible::before {
+  &:focus-visible::after {
     background-position: 0;
   }
 }
