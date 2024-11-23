@@ -5,7 +5,9 @@
 
 .footer__logo {
   text-align: center;
-  padding-block: 32px 12px;
+  padding-block: 40px 5px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -168,10 +170,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 56px;
+    padding-block: 53px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 66px 0;
-  }
 }

@@ -7,20 +7,13 @@
 }
 
 .page-header__logo {
-  right: 120px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    gap: 13px;
-    margin-right: auto;
   }
 }
 
 .page-header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding-block: 18px;

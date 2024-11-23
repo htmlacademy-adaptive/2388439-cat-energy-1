@@ -17,36 +17,33 @@
 <body class="page__body">
   <header class="page-header">
     <div class="container page-header__container">
-      <a class="page-header__logo logo" href="index.html">
-        <span class="visually-hidden">На главную страницу</span>
-        <picture>
-          <source type="image/svg" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-          <source type="image/webp" width="174" height="50" media="(min-width: 1440px)" srcset="images/logo-desktop@1x.webp">
-          <source type="image/webp" width="174" height="50" media="(min-width: 1440px)" srcset="images/logo-desktop@2x.webp">
-          <source type="image/svg" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-          <source type="image/webp" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet@1x.webp">
-          <source type="image/webp" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet@2x.webp">
-          <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Супер-кот в маске на желтом фоне">
-        </picture>
-      </a>
-      <a class="logo__image-link" href="index.html" aria-current="page">
-        <span class="visually-hidden">На главную страницу</span>
-        <svg class="logo__image-title" width="101" height="18">
-          <use href="icons/stack.svg#logo-title"></use>
-        </svg>
-      </a>
       <nav class="main-nav main-nav--is-open main-nav--nojs">
+        <a class="page-header__logo logo" href="index.html">
+          <span class="visually-hidden">На главную страницу</span>
+          <picture>
+            <source type="image/svg" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+            <source type="image/png" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop@1x.png, images/logo-desktop@2x.png 2x">
+            <source type="image/webp" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop@1x.webp, images/logo-desktop@2x.webp 2x">
+            <source type="image/svg" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+            <source type="image/png" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet@1x.png, images/logo-tablet@2x.png 2x">
+            <source type="image/webp" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet@1x.webp, images/logo-tablet@2x.webp 2x">
+            <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Супер-кот в маске на желтом фоне">
+          </picture>
+        </a>
+        <a href="index.html">
+          <span class="visually-hidden">На главную страницу</span>
+          <svg class="logo__image-title" width="101" height="18">
+            <use href="icons/stack.svg#logo-title"></use>
+          </svg>
+        </a>
         <button class="btn-burger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <span class="visually-hidden">Закрыть меню</span>
+          <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="form.html" aria-current="page">Подбор программы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог&nbsp;продукции</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="form.html" aria-current="page">Подбор&nbsp;программы</a></li>
           </ul>
-        </div>
       </nav>
     </div>
   </header>
