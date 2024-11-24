@@ -1,4 +1,23 @@
 .product {
+  width: 280px;
+  margin: auto;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100vh;
+    height: 1px;
+    background-color: $pale-gray;
+    box-shadow: 100vh 0 $pale-gray;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
 
@@ -156,6 +175,19 @@
   row-gap: 10px;
   width: 280px;
   margin: auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vh;
+    height: 1px;
+    background-color: $pale-gray;
+    box-shadow: 100vh 0 $pale-gray;
+    position: absolute;
+    bottom: -24px;
+    right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -206,14 +238,10 @@
 }
 
 .product--more {
+  position: relative;
   text-align: center;
   padding-top: 78px;
   padding-bottom: 24px;
-  border-bottom: 1px solid $light-special-gray;
-  background-image: url("../../icons/plus.svg");
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-position: 50% 14%;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;

@@ -62,14 +62,6 @@
   }
 }
 
-.catalog__item {
-  box-shadow: 0 -1px 0 0 $special-gray;
-
-  @media (min-width: $tablet-width) {
-    box-shadow: none;
-  }
-}
-
 .catalog__product-title {
   @include product-title;
   text-transform: uppercase;
@@ -208,6 +200,10 @@
   align-items: center;
   padding: 12px 0 20px;
   box-shadow: 0 -1px 0 0 $special-gray;
+
+  &:last-child {
+    border-bottom: 1px solid $special-gray;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr auto;
