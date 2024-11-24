@@ -90,6 +90,11 @@
       bottom: 150px;
       left: 96px;
     }
+
+    @media (min-width: $desktop-width) {
+      bottom: 140px;
+      left: 56px;
+    }
   }
 
   &::after {
@@ -107,6 +112,11 @@
       width: 60px;
       bottom: 149px;
       left: 96px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 141px;
+      left: 56px;
     }
   }
 
