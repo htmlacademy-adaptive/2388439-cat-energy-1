@@ -382,6 +382,7 @@
 .form__comment-input {
   @include form-common-text;
   resize: vertical;
+  min-width: 100%;
   color: $dark-gray;
   border-color: $very-light-gray;
   min-height: 150px;
@@ -391,7 +392,6 @@
   @media (min-width: $tablet-width) {
     @include common-text-big;
     color: $dark-gray;
-    min-width: 100%;
     min-height: 175px;
     padding-block: 11px;
     padding-inline: 20px;
