@@ -33,11 +33,10 @@
   &:active::after {
     opacity: 0.3;
   }
-
 }
 
 .social__link--vk {
-  &::after{
+  &::after {
     content: "";
     display: block;
     width: 40px;
@@ -51,7 +50,7 @@
 }
 
 .social__link--youtube {
-    &::after{
+  &::after {
     content: "";
     display: block;
     width: 40px;
@@ -65,7 +64,7 @@
 }
 
 .social__link--tg {
- &::after{
+  &::after {
     content: "";
     display: block;
     width: 40px;

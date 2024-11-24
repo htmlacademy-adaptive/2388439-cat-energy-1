@@ -9,7 +9,7 @@
   }
 }
 
-.main-nav--is-open{
+.main-nav--is-open {
   grid-template-columns: auto 101px auto;
   grid-template-rows: auto 1fr;
   align-items: center;
@@ -35,11 +35,11 @@
       gap: 22px;
       width: auto;
     }
-    
+
     @media (min-width: $desktop-width) {
       max-width: 50%;
       gap: 29px;
-    }  
+    }
   }
 }
 
@@ -138,10 +138,10 @@
 //Отработка меню при отключенном JS
 
 .main-nav--nojs {
-    .btn-burger {
-      &::before,
-      &::after{
-        display: none;
+  .btn-burger {
+    &::before,
+    &::after {
+      display: none;
     }
   }
 
@@ -152,7 +152,7 @@
   }
 
   .main-nav__item {
-  margin-inline: -20px;
+    margin-inline: -20px;
   }
 }
 
@@ -216,7 +216,7 @@
     box-shadow: none;
   }
 
-    &::after {
-      transform: rotate(-45deg);
-    }
+  &::after {
+    transform: rotate(-45deg);
+  }
 }

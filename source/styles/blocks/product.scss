@@ -27,14 +27,14 @@
     padding-inline: 37px;
     gap: 0;
 
-    &::before{
+    &::before {
       display: none;
     }
 
     &:last-child {
       background-color: $base-white;
     }
- }
+  }
 
   @media (min-width: $desktop-width) {
     width: 245px;
