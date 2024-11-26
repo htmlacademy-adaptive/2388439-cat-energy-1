@@ -1,15 +1,15 @@
 .program {
   margin: auto;
-  padding-bottom: 23px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding-bottom: 45px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding-bottom: 71px;
+    padding-bottom: 73px;
   }
 }
 
@@ -17,10 +17,10 @@
   @include list-reset;
   text-align: center;
   display: grid;
-  gap: 23px;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
-    gap: 33px;
+    gap: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
 
 .program__item {
   background-color: $basic-grey;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 33px 22px 20px;
   text-align: left;
   position: relative;
   margin: 0;
@@ -51,7 +51,7 @@
       background-color: $base-green;
       border-radius: 50%;
       position: absolute;
-      top: 91px;
+      top: 93px;
       right: 63px;
     }
 
@@ -68,7 +68,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +92,7 @@
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 194px;
-      top: 81px;
+      top: 82px;
       right: 93px;
     }
 
@@ -120,7 +120,7 @@
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
-      top: 134px;
+      top: 136px;
       right: 29px;
     }
 
@@ -158,7 +158,7 @@
   @include common-text;
   margin: 0;
   border-bottom: 1px solid $light-special-gray;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -183,18 +183,21 @@
   color: $base-black;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 17px;
   margin-top: 19px;
+  max-width: 140px;
 
   @media (min-width: $tablet-width) {
     @include common-text-big;
-    margin-top: 14px;
+    max-width: 168px;
+    margin-top: 13px;
+    gap: 26px;
   }
 
   &::after {
     content: "";
     display: block;
-    width: 28px;
+    min-width: 35px;
     height: 10px;
     background-image: url("../../icons/icon-arrow.svg");
     background-repeat: no-repeat;
@@ -202,10 +205,6 @@
     background-position: -8;
     transition: background-position 0.3s;
     align-items: center;
-
-    @media (min-width: $tablet-width) {
-      line-height: 30px;
-    }
   }
 
   &:active {
@@ -213,10 +212,10 @@
   }
 
   &:hover::after {
-    background-position: 0;
+    background-position: -4px;
   }
 
   &:focus-visible::after {
-    background-position: 0;
+    background-position: -4px;
   }
 }

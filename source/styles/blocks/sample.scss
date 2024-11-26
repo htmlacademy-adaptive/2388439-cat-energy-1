@@ -27,9 +27,9 @@
 
   @media (min-width: $desktop-width) {
     grid-template:
-      "title slider" 147px
-      "paragraph slider" 166px
-      "statistics slider" auto / 1fr;
+      "title slider" auto
+      "paragraph slider" auto
+      "statistics slider" auto / auto;
     gap: 0;
   }
 }
@@ -88,7 +88,6 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-area: statistics;
-    grid-template-rows: 72px;
     grid-template-columns: 366px;
     gap: 60px;
     margin-top: 69px;
@@ -153,6 +152,7 @@
 .sample__item {
   display: grid;
   gap: 3px;
+  align-self: flex-start;
 
   @media (min-width: $tablet-width) {
     width: 162px;
