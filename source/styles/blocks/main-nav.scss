@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding-block: 48px 62px;
+    padding-block: 42px 65px;
     background-color: transparent;
   }
 }
@@ -185,6 +185,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-inline: 2px;
+    padding-block: 27px 22px;
   }
 
   &:hover {

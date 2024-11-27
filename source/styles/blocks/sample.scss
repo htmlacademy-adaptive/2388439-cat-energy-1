@@ -22,7 +22,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 51px;
-    gap: 49px;
+    row-gap: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,7 +30,7 @@
       "title slider" auto
       "paragraph slider" auto
       "statistics slider" auto / auto;
-    gap: 0;
+    gap: 0 222px;
   }
 }
 
@@ -58,14 +58,14 @@
 
   @media (min-width: $tablet-width) {
     @include common-text-tablet;
-    margin-bottom: 7px;
+    margin-block-end: 7px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: paragraph;
     align-self: end;
     width: 436px;
-    margin-bottom: 0;
+    margin-block: 146px 0;
   }
 }
 
@@ -89,7 +89,7 @@
     display: grid;
     grid-area: statistics;
     grid-template-columns: 366px;
-    gap: 60px;
+    gap: 35px;
     margin-top: 69px;
   }
 }
@@ -160,7 +160,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 11px;
+    gap: 7px;
   }
 }
 
