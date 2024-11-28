@@ -18,7 +18,7 @@
     display: block;
     width: 50%;
     height: 694px;
-    background-image: linear-gradient(to top, #ffffff 0, rgba(104, 183, 56, 0.85) 0), image-set(url("../../images/index-background-desktop@1x.jpg") type("image/jpg") 1x, url("../../images/index-background-desktop@2x.jpg") type("image/jpg") 2x, url("../../images/index-background-desktop@1x.webp") type("image/webp") 1x, url("../../images/index-background-desktop@2x.webp") type("image/webp") 2x), linear-gradient(to right top, #4e4f54, #2b2a2e);
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100% $base-green), image-set(url("../../images/index-background-desktop@1x.jpg") type("image/jpg") 1x, url("../../images/index-background-desktop@2x.jpg") type("image/jpg") 2x, url("../../images/index-background-desktop@1x.webp") type("image/webp") 1x, url("../../images/index-background-desktop@2x.webp") type("image/webp") 2x), linear-gradient(to bottom, #2b2a2e -50%, #4e4f54 100%);
     background-repeat: no-repeat;
     position: absolute;
     left: 50%;
