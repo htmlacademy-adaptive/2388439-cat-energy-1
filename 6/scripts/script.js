@@ -1,1 +1,0 @@
-document.querySelector(".main-nav").classList.remove("main-nav--nojs");var n=document.querySelector(".btn-burger"),e=document.querySelector(".main-nav");e.classList.add("main-nav--is-close");n&&n.addEventListener("click",()=>{e.classList.toggle("main-nav--is-open"),e.classList.toggle("main-nav--is-close")});
