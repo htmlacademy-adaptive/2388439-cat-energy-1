@@ -4,23 +4,33 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient($base-white 619px, $sample-gray 462px);
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 75px 0;
-    background-image: linear-gradient($base-white 25%, $sample-gray 25%);
+    padding: 0 0 21px;
+    background-image: linear-gradient($base-white 147px, $sample-gray 147px);
   }
 }
 
 .sample__container {
-  padding-top: 25px;
+  display: grid;
+  gap: 20px;
+  padding: 25px 0 44px;
   text-align: left;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 51px;
+    row-gap: 49px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-areas: "title slider" "paragraph slider" "statistics slider";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 210px 210px;
+    grid-template:
+      "title slider" auto
+      "paragraph slider" auto
+      "statistics slider" auto / auto;
+    gap: 0 222px;
   }
 }
 
@@ -28,46 +38,70 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: title;
-    margin-bottom: 146px;
+    margin: 10px 0 0;
   }
 }
 
 .sample__text {
   @include common-text;
-  margin: 0 0 20px 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     @include common-text-tablet;
-    margin-bottom: 55px;
+    margin-block-end: 7px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: paragraph;
-    margin-bottom: 0;
+    align-self: end;
     width: 436px;
+    margin-block: 146px 0;
+  }
+}
+
+.sample__text br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 
 .sample__wrapper {
+  display: grid;
+  gap: 20px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: statistics;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-area: statistics;
+    grid-template-columns: 366px;
+    gap: 35px;
+    margin-top: 69px;
+  }
+}
+
+.sample__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 43px;
   }
 }
 
@@ -78,33 +112,36 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     text-align: end;
-    padding: 0;
+    justify-content: flex-start;
+    row-gap: 10px;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: start;
-    align-content: space-around;
-    flex-direction: row;
-    column-gap: 63px;
+    column-gap: 67px;
+    flex-flow: nowrap;
+    justify-content: flex-start;
   }
 }
 
 .sample__value {
   text-transform: uppercase;
-  margin: 15px 0 0 0;
+  margin: 0;
+  padding-block: 16px;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
   grid-row-start: 1;
+  box-shadow: 0 0 0 1px $special-gray;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -112,42 +149,34 @@
   }
 }
 
-.sample__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  @media (min-width: $tablet-width) {
-    column-gap: 43px;
-    margin: 0;
-  }
-}
-
 .sample__item {
-  border: 1px solid $special-gray;
-  border-radius: 3px;
-  width: 122px;
-  height: 56px;
   display: grid;
-  gap: 8px;
-  justify-content: center;
+  gap: 3px;
+  align-self: flex-start;
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    height: 77px;
-    gap: 16px;
+    gap: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 7px;
   }
 }
 
 .sample__description {
   @include common-text;
-  background-color: $sample-gray;
   font-size: 12px;
   line-height: 12px;
-  width: 77px;
-  height: 24px;
   text-align: center;
   text-transform: lowercase;
+  width: 77px;
+  min-height: 24px;
   overflow: hidden;
+  justify-self: center;
+  margin-top: -12px;
+  background-color: $sample-gray;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     background-color: $base-white;

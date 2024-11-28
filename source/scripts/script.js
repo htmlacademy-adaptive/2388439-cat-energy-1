@@ -1,14 +1,13 @@
-let navMain = document.querySelector('.main-nav');
-let navBurger = document.querySelector('.btn-burger');
+document.querySelector('.main-nav').classList.remove('main-nav--nojs');
 
-navMain.classList.remove('main-nav--nojs');
+const btnBurger = document.querySelector('.btn-burger');
+const mainNav = document.querySelector('.main-nav');
 
-navBurger.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--is-close')) {
-    navMain.classList.remove('main-nav--is-close');
-    navMain.classList.add('main-nav--is-open');
-  } else {
-    navMain.classList.add('main-nav--is-close');
-    navMain.classList.remove('main-nav--is-open');
-  }
-});
+mainNav.classList.add('main-nav--is-close');
+
+if (btnBurger) {
+  btnBurger.addEventListener('click', () => {
+    mainNav.classList.toggle('main-nav--is-open');
+    mainNav.classList.toggle('main-nav--is-close');
+  });
+}

@@ -1,23 +1,46 @@
 .other-action {
   @include background-green;
-  background-image: url("../../../img/icon-gift.svg"), url("../../../img/cat-carrier-mobile.png");
-  background-repeat: no-repeat;
-  background-size: 78px 80px, cover;
-  background-position: center top 58px, center;
-  height: 289px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  align-items: center;
+  min-height: 289px;
+  padding-top: 57px;
+  background: linear-gradient(to top, #ffffff 0, rgba(104, 183, 56, 0.85) 0), image-set(url("../../images/promo-bg-mobile@1x.jpg") type("image/jpg") 1x, url("../../images/promo-bg-mobile@2x.jpg") type("image/jpg") 2x, url("../../images/promo-bg-mobile@1x.webp") type("image/webp") 1x, url("../../images/promo-bg-mobile@2x.webp") type("image/webp") 2x) center no-repeat;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    text-align: start;
+    column-gap: 265px;
+    min-height: 200px;
+    background-position: center -326px;
+    background-size: cover;
+    margin-top: -4px;
+    padding-top: 0;
+    padding-left: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 0 0, calc(100% - 2px);
+    gap: 47px;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    padding-left: 0;
+    padding-top: 60px;
+  }
 }
 
 .other-action__text {
-  color: $base-white;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0;
+  @include other-action-text;
   text-align: center;
-  padding-top: 187px;
+  color: $base-white;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

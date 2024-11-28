@@ -1,41 +1,28 @@
 .page-header__logo {
-  right: 120px;
+  margin-inline-end: 7px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    gap: 13px;
+    margin-inline-end: 0;
   }
 }
 
-.page-header__container {
-  padding-top: 14px;
-  padding-bottom: 14px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+.page-header__logo-title {
+  display: flex;
+  margin-inline: auto;
+  margin-block: 24px 22px;
 }
 
 .page-header--index::before {
   @media (min-width: $desktop-width) {
     content: "";
-    background-image: linear-gradient(to top, $base-white 0, rgba(105, 183, 56, 0.85) 0), url("../img/index-background-desktop.png");
+    display: block;
+    width: 50%;
     height: 694px;
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100% $base-green), image-set(url("../../images/index-background-desktop@1x.jpg") type("image/jpg") 1x, url("../../images/index-background-desktop@2x.jpg") type("image/jpg") 2x, url("../../images/index-background-desktop@1x.webp") type("image/webp") 1x, url("../../images/index-background-desktop@2x.webp") type("image/webp") 2x), linear-gradient(to bottom, #2b2a2e -50%, #4e4f54 100%);
+    background-repeat: no-repeat;
     position: absolute;
     left: 50%;
     right: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
     z-index: -1;
   }
 }
