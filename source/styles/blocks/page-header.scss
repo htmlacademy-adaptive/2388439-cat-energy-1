@@ -2,8 +2,6 @@
   margin-inline-end: 7px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
     margin-inline-end: 0;
   }
 }

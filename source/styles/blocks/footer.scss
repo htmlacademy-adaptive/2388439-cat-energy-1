@@ -50,6 +50,7 @@
 .footer__address-container {
   background-color: transparent;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-block: 26px 27px;
   width: 280px;
