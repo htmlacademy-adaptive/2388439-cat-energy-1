@@ -2,13 +2,12 @@
   width: 280px;
   margin: auto;
   display: grid;
-  justify-content: space-between;
   grid-template-columns: auto 1fr 40px;
   align-items: center;
-  background-color: $base-white;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
     width: 708px;
     padding-block: 16px 20px;
   }
@@ -123,8 +122,8 @@
     content: "";
     position: absolute;
     display: block;
-    top: 8px;
-    left: 9px;
+    top: 9px;
+    left: 8px;
     width: 24px;
     height: 2px;
     background-color: #000000;
