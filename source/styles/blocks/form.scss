@@ -38,11 +38,12 @@
   }
 }
 
-input, textarea {
+input,
+textarea {
   &::placeholder {
     @include form-common-text;
     color: $dark-gray;
-  
+
     @media (min-width: $tablet-width) {
       @include common-text-big;
     }
@@ -552,7 +553,6 @@ input, textarea {
     padding-block: 10px;
     padding-inline: 15px 37px;
   }
-
 }
 
 .form__module--extra {
