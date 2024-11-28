@@ -2,20 +2,55 @@
   text-decoration: none;
   min-height: 38px;
   box-sizing: content-box;
-  position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
 
   @media (min-width: $tablet-width) {
     position: static;
+    flex-grow: 0;
   }
 }
 
 .logo__image-title {
   display: block;
-  position: absolute;
-  left: 90px;
-  bottom: 14px;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    position: static;
+    display: none;
+  }
+}
+
+.logo__image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.logo__image-footer {
+  width: 128px;
+  height: 24px;
+  margin-inline: auto;
+}
+
+a:has(.logo__image-title) {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

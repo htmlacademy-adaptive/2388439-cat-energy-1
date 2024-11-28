@@ -4,7 +4,125 @@
 }
 
 .slider {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  align-self: start;
+  max-width: 560px;
+  height: auto;
+  margin-block: -2px;
+  margin-inline: auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-block: 39px 51px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: slider;
+    margin-block: 12px;
   }
+}
+
+.slider picture {
+  display: contents;
+}
+
+.slider__image {
+  grid-area: 1 / 1 / auto / -1;
+  height: 100%;
+  display: block;
+}
+
+.slider__pull-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.slider__pull {
+  background-color: $medium-gray;
+  cursor: ew-resize;
+  border: none;
+  border-radius: 4px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $base-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $medium-gray;
+    border-radius: 50%;
+    background-color: $base-white;
+    position: absolute;
+    top: 108px;
+    left: -18px;
+    transition: border-color 0.3s;
+
+    @media (min-width: $tablet-width) {
+      top: 236px;
+    }
+  }
+
+  &:hover::before {
+    border-color: $base-green;
+  }
+
+  &:active::before {
+    opacity: 0.6;
+    border-color: $dark-green;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 18px;
+    mask: url("../../icons/icon-pull-bg.svg");
+    background-color: $medium-gray;
+    position: absolute;
+    top: 119px;
+    left: -10px;
+    transition: background-color 0.3s;
+
+    @media (min-width: $tablet-width) {
+      top: 246px;
+    }
+  }
+
+  &:hover::after {
+    background-color: $base-green;
+  }
+
+  &:active::after {
+    opacity: 0, 6;
+    background-color: $dark-green;
+  }
+}
+
+
+.slider__image--befor {
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider__image--after {
+  clip-path: inset(0 0 0 50%);
 }

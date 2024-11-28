@@ -6,7 +6,7 @@
 @import "./mixins.scss";
 @import "./variables.scss";
 
-//Общие блоки для всех страниц
+//Блоки
 @import "./blocks/page-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/page.scss";
@@ -26,7 +26,5 @@
 @import "./blocks/other-action.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/container";
-@import "./blocks/container-other.scss";
-
-//Блоки формы подбора программы
-@import "./blocks/form.scss"
+@import "./blocks/form.scss";
+@import "./blocks/more-products.scss"
