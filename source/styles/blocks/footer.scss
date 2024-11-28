@@ -171,6 +171,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-block: 66px;
   }
 }

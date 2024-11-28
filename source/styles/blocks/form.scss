@@ -38,6 +38,17 @@
   }
 }
 
+input, textarea {
+  &::placeholder {
+    @include form-common-text;
+    color: $dark-gray;
+  
+    @media (min-width: $tablet-width) {
+      @include common-text-big;
+    }
+  }
+}
+
 .form__title {
   @include common-title;
   margin-inline: 0;
@@ -161,15 +172,6 @@
 .form__text-input::-webkit-inner-spin-button {
   margin: 0;
   appearance: none;
-}
-
-.form__text-input::placeholder {
-  @include form-common-text;
-  color: $dark-gray;
-
-  @media (min-width: $tablet-width) {
-    @include common-text-big;
-  }
 }
 
 .form__text-input--invalid:user-invalid {
@@ -404,12 +406,6 @@
   }
 }
 
-.form__comment-input::placeholder {
-  @media (min-width: $tablet-width) {
-    @include common-text-big;
-  }
-}
-
 .form__button {
   @include product-title;
   border: none;
@@ -537,15 +533,6 @@
 }
 
 .form__field-label .form__field-input {
-  &::placeholder {
-    @include form-common-text;
-    color: $dark-gray;
-
-    @media (min-width: $tablet-width) {
-      @include common-text-big;
-    }
-  }
-
   padding-block: 10px;
   padding-inline: 15px 37px;
   margin-left: 13px;
@@ -568,6 +555,7 @@
     padding-block: 10px;
     padding-inline: 15px 37px;
   }
+
 }
 
 .form__module--extra {
