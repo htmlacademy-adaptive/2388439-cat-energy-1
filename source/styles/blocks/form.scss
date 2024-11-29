@@ -365,7 +365,8 @@
   @include form-common-text;
   resize: vertical;
   min-width: 100%;
-  border-color: $very-light-gray;
+  outline: 1px solid $very-light-gray;
+  border:none;
   min-height: 150px;
   margin-top: 36px;
   padding: 14px;
