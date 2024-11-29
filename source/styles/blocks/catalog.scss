@@ -16,7 +16,6 @@
   padding-top: 27px;
   gap: 41px;
 
-
   @media (min-width: $tablet-width) {
     width: 708px;
     padding-top: 34px;
@@ -166,14 +165,6 @@
     grid-column: 1 / 3;
     padding-left: 0;
     box-shadow: -40px 0 0 0 $base-white, 40px 0 0 0 $base-white;
-  }
-}
-
-.catalog-other__container {
-  margin-bottom: 35px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
   }
 }
 
