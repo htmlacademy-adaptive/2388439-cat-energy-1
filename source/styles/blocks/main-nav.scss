@@ -57,6 +57,7 @@
       background-color: transparent;
       display: flex;
       flex-wrap: wrap;
+      justify-content: flex-end;
       gap: 22px;
       width: auto;
     }
@@ -80,6 +81,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 22px;
+      justify-content: flex-end;
       position: static;
       background-color: transparent;
       width: auto;
@@ -108,6 +110,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 22px;
+      justify-content: flex-end;
       width: auto;
       background-color: transparent;
     }
