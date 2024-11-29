@@ -6,6 +6,21 @@
   }
 }
 
+.page-header__title {
+  display: block;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-title:has(.page-header__title) {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .page-header__logo-title {
   display: flex;
   margin-inline: auto;

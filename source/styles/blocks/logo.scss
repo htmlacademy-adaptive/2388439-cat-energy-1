@@ -22,15 +22,6 @@
   }
 }
 
-.logo__image-title {
-  display: block;
-  flex-grow: 1;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .logo__image {
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -47,10 +38,4 @@
   width: 128px;
   height: 24px;
   margin-inline: auto;
-}
-
-a:has(.logo__image-title) {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }

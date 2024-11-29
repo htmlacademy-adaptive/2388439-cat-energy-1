@@ -38,18 +38,6 @@
   }
 }
 
-input,
-textarea {
-  &::placeholder {
-    @include form-common-text;
-    color: $dark-gray;
-
-    @media (min-width: $tablet-width) {
-      @include common-text-big;
-    }
-  }
-}
-
 .form__title {
   @include common-title;
   margin-inline: 0;
@@ -145,6 +133,15 @@ textarea {
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
+
+  &::placeholder {
+    @include form-common-text;
+    color: $dark-gray;
+
+    @media (min-width: $tablet-width) {
+      @include common-text-big;
+    }
+  }
 
   &:hover {
     border-color: $special-gray;
@@ -301,24 +298,6 @@ textarea {
   row-gap: 38px;
 }
 
-.legend-comment {
-  &::before {
-    content: "";
-    display: block;
-    width: 207px;
-    height: 52px;
-    position: absolute;
-    background-color: $base-white;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      width: 418px;
-      height: 36px;
-      left: 0;
-    }
-  }
-}
-
 .form__module-radio {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -386,10 +365,20 @@ textarea {
   @include form-common-text;
   resize: vertical;
   min-width: 100%;
-  border-color: $very-light-gray;
+  outline: 1px solid $very-light-gray;
+  border: none;
   min-height: 150px;
   margin-top: 36px;
   padding: 14px;
+
+  &::placeholder {
+    @include form-common-text;
+    color: $dark-gray;
+
+    @media (min-width: $tablet-width) {
+      @include common-text-big;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     @include common-text-big;
@@ -539,6 +528,15 @@ textarea {
   font-size: 16px;
   text-transform: uppercase;
 
+  &::placeholder {
+    @include form-common-text;
+    color: $dark-gray;
+
+    @media (min-width: $tablet-width) {
+      @include common-text-big;
+    }
+  }
+
   &:hover {
     border-color: $special-gray;
   }
@@ -686,25 +684,6 @@ textarea {
   @media (min-width: $desktop-width) {
     text-align: left;
     margin: 0 0 0 32px;
-  }
-}
-
-.module-info {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
-  }
-}
-
-.module-diet {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
-    border: 1px solid $very-light-gray;
-  }
-}
-
-.module-comment {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
   }
 }
 

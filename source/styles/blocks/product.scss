@@ -21,7 +21,8 @@
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
     width: 324px;
-    grid-template-rows: 147px auto auto 1fr;
+    margin: 0;
+    grid-template-rows: 147px 1fr auto auto;
     padding-top: 0;
     padding-block-end: 40px;
     padding-inline: 37px;
@@ -69,16 +70,17 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
+    grid-row: 1;
   }
 }
 
 .product__image {
   @media (min-width: $tablet-width) {
-    margin-block-start: -136px;
+    margin-block-start: -73px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-block-start: -127px;
+    margin-block-start: -72px;
   }
 }
 
@@ -177,5 +179,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
     grid-row: 4 / 4;
+    height: fit-content;
+    align-self: end;
   }
 }
