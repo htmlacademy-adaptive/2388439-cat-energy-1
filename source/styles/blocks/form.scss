@@ -38,18 +38,6 @@
   }
 }
 
-input,
-textarea {
-  &::placeholder {
-    @include form-common-text;
-    color: $dark-gray;
-
-    @media (min-width: $tablet-width) {
-      @include common-text-big;
-    }
-  }
-}
-
 .form__title {
   @include common-title;
   margin-inline: 0;
@@ -81,7 +69,7 @@ textarea {
 .form__module {
   @include form-common-text;
   color: $dark-gray;
-
+  
   @media (min-width: $tablet-width) {
     @include common-text-big;
     grid-column: 1 / 3;
@@ -145,6 +133,15 @@ textarea {
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
+
+  &::placeholder {
+    @include form-common-text;
+    color: $dark-gray;
+
+    @media (min-width: $tablet-width) {
+      @include common-text-big;
+    }
+  }
 
   &:hover {
     border-color: $special-gray;
@@ -391,6 +388,15 @@ textarea {
   margin-top: 36px;
   padding: 14px;
 
+  &::placeholder {
+    @include form-common-text;
+    color: $dark-gray;
+
+    @media (min-width: $tablet-width) {
+      @include common-text-big;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     @include common-text-big;
     min-height: 175px;
@@ -538,6 +544,15 @@ textarea {
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
+
+  &::placeholder {
+    @include form-common-text;
+    color: $dark-gray;
+
+    @media (min-width: $tablet-width) {
+      @include common-text-big;
+    }
+  }
 
   &:hover {
     border-color: $special-gray;

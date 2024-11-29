@@ -15,7 +15,7 @@
   }
 }
 
-a:has(.page-header__title) {
+.page-header__logo-title:has(.page-header__title) {
   @media (min-width: $tablet-width) {
     display: none;
   }
